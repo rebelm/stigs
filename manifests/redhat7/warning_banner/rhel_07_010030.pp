@@ -8,17 +8,15 @@ class stigs::redhat7::warning_banner::rhel_07_010030 inherits stigs::redhat7::re
 
   if $rhel_07_010030 == 'present' {
     $file = 'file'
-    $directory = 'directory'
   }
   else {
     $file = 'absent'
-    $directory = 'absent'
   }
 
   file { [ '/etc/dconf',
            '/etc/dconf/db',
            '/etc/dconf/db/local.d', ]:
-    ensure =>  $directory,
+    ensure => 'directory',
     owner =>  'root',
     group =>  'root',
     mode =>  '0755',
@@ -31,7 +29,7 @@ class stigs::redhat7::warning_banner::rhel_07_010030 inherits stigs::redhat7::re
     group   => 'root',
     mode    => '0644',
     content => $banner_setting,
-    require => File['/etc/dconf/db/local.d/'],
+    require => File['/etc/dconf/db/local.d'],
   }
 
   file { '/etc/issue':
