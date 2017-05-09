@@ -7,19 +7,16 @@
 class stigs::redhat7::warning_banner::rhel_07_010030 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010030 == 'present' {
-    $file = 'file'
+    $ensure = 'present'
   }
   else {
-    $file = 'absent'
+    $ensure = 'absent'
   }
 
-  $banner_enable = "[org/gnome/login-screen]\nbanner-message-enable=true"
-  file { '/etc/dconf/db/local.d/01-banner-enable':
-    ensure  => $file,
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0644',
-    content => $banner_enable,
+  file_line { 'Gnome-Banner_Enabled':
+    ensure => $ensure,
+    line   => 'banner-message-enable=true',
+    path   => '/etc/dconf/db/local.d/01-banner',
   }
 
- }
+}

@@ -11,9 +11,8 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     owner  => 'root',
     group  => 'root',
     mode   => '0755',
-    before =>  [ Class['stigs::redhat7::warning_banner::rhel_07_010030'], 
-                 Class['stigs::redhat7::warning_banner::rhel_07_010031'], 
-                 File['/etc/dconf/db/local.d/00-screensaver'], ],
+    before =>  [ File['/etc/dconf/db/local.d/00-screensaver'], 
+                 File['/etc/dconf/db/local.d/01-banner'], ],
   }
 
   file { '/etc/dconf/db/local.d/00-screensaver':
@@ -29,4 +28,18 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     path    => '/etc/dconf/db/local.d/00-screensaver',
   }
 
+  file { '/etc/dconf/db/local.d/01-banner':
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+    before =>  [ Class['stigs::redhat7::warning_banner::rhel_07_010030'],
+                 Class['stigs::redhat7::warning_banner::rhel_07_010031'] ],
+  } ->
+  file_line { 'Gnome-Banner':
+    ensure  => 'present',
+    line    => '[org/gnome/login-screen]',
+    path    => '/etc/dconf/db/local.d/01-banner',
+  }
+ 
 }

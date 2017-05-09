@@ -6,10 +6,10 @@
 class stigs::redhat7::warning_banner::rhel_07_010031 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010031 == 'present' {
-    $file = 'present'
+    $ensure = 'present'
   }
   else {
-    $file = 'absent'
+    $ensure = 'absent'
   }
 
   # The Gnome configuration file doesn't allow you to spread a value out over several lines, so
@@ -18,12 +18,10 @@ class stigs::redhat7::warning_banner::rhel_07_010031 inherits stigs::redhat7::re
 
   $banner_message = "[org/gnome/login-screen]\nbanner-message-text='$banner'"
 
-  file { '/etc/dconf/db/local.d/02-banner-message':
-    ensure  => $file,
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0644',
-    content => $banner_message,
+  file_line { 'Gnome-Banner_Message':
+    ensure => $ensure,
+    line   => "banner-message-text='$banner'",
+    path   =>  '/etc/dconf/db/local.d/01-banner',
   }
 
 }
