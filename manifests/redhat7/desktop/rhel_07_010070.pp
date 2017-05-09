@@ -13,7 +13,7 @@ class stigs::redhat7::desktop::rhel_07_010070 inherits stigs::redhat7::redhat7 {
     $ensure = 'absent'
   }
 
-  file_line { 'Gnome-Lock_Delay':
+  file_line { 'Gnome-Idle_Delay':
     ensure => $ensure,
     line   => 'idle-delay=uint32 900',
     path   => '/etc/dconf/db/local.d/00-screensaver', 
