@@ -10,5 +10,6 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::warning_banner::rhel_07_010031 
   include stigs::redhat7::warning_banner::rhel_07_010040
   include stigs::redhat7::desktop::rhel_07_010060
+  include stigs::redhat7::desktop::rhel_07_010070
 
 }

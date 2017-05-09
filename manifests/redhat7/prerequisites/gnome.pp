@@ -20,7 +20,8 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    before =>  [ Class['stigs::redhat7::desktop::rhel_07_010060'], ],
+    before =>  [ Class['stigs::redhat7::desktop::rhel_07_010060'],
+                 Class['stigs::redhat7::desktop::rhel_07_010070'] ],
   } ->
   file_line { 'Gnome-Screensaver':
     ensure  => 'present',
