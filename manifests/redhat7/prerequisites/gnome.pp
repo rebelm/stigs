@@ -1,7 +1,7 @@
 # Ensure directories are created before manifests
 # Create files in /etc/dconf/db/local.d
 
-class stigs::redhat7::warning_banner::prerequisites inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
 
 file { [ '/etc/dconf',
          '/etc/dconf/db',
@@ -11,7 +11,9 @@ file { [ '/etc/dconf',
     group  => 'root',
     mode   => '0755',
     before =>  [ Class['stigs::redhat7::warning_banner::rhel_07_010030'], 
-                 Class['stigs::redhat7::warning_banner::rhel_07_010031'], ],
+                 Class['stigs::redhat7::warning_banner::rhel_07_010031'], 
+                 Class['stigs::redhat7::desktop::rhel_07_010060'], ],
+
   }
 
 }
