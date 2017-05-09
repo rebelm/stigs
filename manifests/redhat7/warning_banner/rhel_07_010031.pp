@@ -12,34 +12,11 @@ class stigs::redhat7::warning_banner::rhel_07_010031 inherits stigs::redhat7::re
     $file = 'absent'
   }
 
-  $banner = @(EOF)
-      'You are accessing a U.S. Government (USG) Information System (IS) that is
-      provided for USG-authorized use only. By using this IS (which includes any
-      device attached to this IS), you consent to the following conditions:
-  
-      -The USG routinely intercepts and monitors communications on this IS for
-      purposes including, but not limited to, penetration testing, COMSEC monitoring,
-      network operations and defense, personnel misconduct (PM), law enforcement
-      (LE), and counterintelligence (CI) investigations.
-  
-      -At any time, the USG may inspect and seize data stored on this IS.
-  
-      -Communications using, or data stored on, this IS are not private, are subject
-      to routine monitoring, interception, and search, and may be disclosed or used
-      for any USG-authorized purpose.
-  
-      -This IS includes security measures (e.g., authentication and access controls)
-      to protect USG interests -- not for your personal benefit or privacy.
-  
-      -Notwithstanding the above, using this IS does not constitute consent to PM, LE
-      or CI investigative searching or monitoring of the content of privileged
-      communications, or work product, related to personal representation or services
-      by attorneys, psychotherapists, or clergy, and their assistants. Such
-      communications and work product are private and confidential. See User
-      Agreement for details.'
-      | EOF
+  # The Gnome configuration file doesn't allow you to spread a value out over several lines, so
+  # the only way to implement this properly was with this ugly one lined string.
+  $banner='You are accessing a U.S. Government (USG) Information System (IS) that is\nprovided for USG-authorized use only. By using this IS (which includes any\ndevice attached to this IS), you consent to the following conditions:\n \n-The USG routinely intercepts and monitors communications on this IS for\npurposes including, but not limited to, penetration testing, COMSEC monitoring,\nnetwork operations and defense, personnel misconduct (PM), law enforcement\n(LE), and counterintelligence (CI) investigations.\n \n-At any time, the USG may inspect and seize data stored on this IS.\n  \n-Communications using, or data stored on, this IS are not private, are subject\nto routine monitoring, interception, and search, and may be disclosed or used\nfor any USG-authorized purpose.\n \n-This IS includes security measures (e.g., authentication and access controls)\nto protect USG interests -- not for your personal benefit or privacy.\n  \n-Notwithstanding the above, using this IS does not constitute consent to PM, LE\nor CI investigative searching or monitoring of the content of privileged\ncommunications, or work product, related to personal representation or services\nby attorneys, psychotherapists, or clergy, and their assistants. Such\ncommunications and work product are private and confidential. See User\nAgreement for details.'
 
-  $banner_message = "[org/gnome/login-screen\nbanner-message-text=$banner"
+  $banner_message = "[org/gnome/login-screen]\nbanner-message-text='$banner'"
 
   file { '/etc/dconf/db/local.d/02-banner-message':
     ensure  => $file,
