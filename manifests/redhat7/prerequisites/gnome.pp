@@ -15,6 +15,7 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
                  File['/etc/dconf/db/local.d/01-banner'], ],
   }
 
+  # Screensaver config file
   file { '/etc/dconf/db/local.d/00-screensaver':
     ensure => 'file',
     owner  => 'root',
@@ -30,6 +31,7 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     path    => '/etc/dconf/db/local.d/00-screensaver',
   }
 
+  # Banner config file
   file { '/etc/dconf/db/local.d/01-banner':
     ensure => 'file',
     owner  => 'root',
@@ -43,5 +45,24 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     line    => '[org/gnome/login-screen]',
     path    => '/etc/dconf/db/local.d/01-banner',
   }
+
+  # Session locks config file
+  file { '/etc/dconf/db/local.d/locks':
+    ensure => 'directory',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0755',
+  }
+
+  file { '/etc/dconf/db/local.d/locks/session':
+    ensure  => 'file',
+    owner   => 'root',
+    group   => 'root',
+    mode    => '644',
+    require => File['/etc/dconf/db/local.d/locks'],
+    before  =>  [ Class['stigs::redhat7::desktop::rhel_07_010071'], ],
+  }
+
+
  
 }
