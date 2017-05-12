@@ -15,5 +15,13 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::software::rhel_07_010072
   include stigs::redhat7::desktop::rhel_07_010073
   include stigs::redhat7::desktop::rhel_07_010074
+  include stigs::redhat7::password_complexity::rhel_07_010090
+  include stigs::redhat7::password_complexity::rhel_07_010100
+  include stigs::redhat7::password_complexity::rhel_07_010110
+  include stigs::redhat7::password_complexity::rhel_07_010120
+  include stigs::redhat7::password_complexity::rhel_07_010130
+  include stigs::redhat7::password_complexity::rhel_07_010140
+  include stigs::redhat7::password_complexity::rhel_07_010150
+  include stigs::redhat7::password_complexity::rhel_07_010160
 
 }
