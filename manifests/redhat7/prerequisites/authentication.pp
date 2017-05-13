@@ -16,5 +16,13 @@ class stigs::redhat7::prerequisites::authentication inherits stigs::redhat7::red
                  Class['stigs::redhat7::authentication::rhel_07_010180'], ],
   }
 
+  file { '/etc/libuser.conf':
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+    before =>  [ Class['stigs::redhat7::authentication::rhel_07_010190'], ],
+  }
+
 }
 
