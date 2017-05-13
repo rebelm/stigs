@@ -6,7 +6,9 @@
 
 class stigs::redhat7::authentication::rhel_07_010170 inherits stigs::redhat7::redhat7 {
 
-  if $rhel_07_010170 == 'present' {
+  # Stig rhel_07_01024 modifies the same exact file_line in the same file
+  # This manfiest should naturally only run when stig rhel_07_010240 is absent
+  if ($rhel_07_010170 == 'present') and ($rhel_07_010240 == 'absent') {
     $ensure = 'present'
   }
   else {
@@ -18,9 +20,10 @@ class stigs::redhat7::authentication::rhel_07_010170 inherits stigs::redhat7::re
     line              => 'password    sufficient    pam_unix.so sha512',
     after             => '^password.*requisite.*pam_pwquality.so|^password',
     path              => '/etc/pam.d/system-auth', 
-    match             => '^password.*sufficient.*pam_unix.so.*sha512',
-    replace           => 'false',
-    match_for_absence => 'true',
+    match             => '^password.*sufficient.*pam_unix.so',
+    replace           => 'true',
+    multiple          => 'true',
+    match_for_absence => 'false',
   }
 
 }

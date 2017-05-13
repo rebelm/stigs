@@ -26,6 +26,12 @@ class stigs::redhat7::params (
   String $rhel_07_010210 = 'present',
   String $rhel_07_010220 = 'present',
   String $rhel_07_010230 = 'present',
+  String $rhel_07_010240 = 'present',
 ){
 
 }
+
+
+# NOTES
+
+# STIGS rhel_07_010170 and rhel_07_010240 should not both be absent
