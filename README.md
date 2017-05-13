@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # stig
 
 #### Table of Contents
@@ -81,3 +82,10 @@ know what the ground rules for contributing are.
 If you aren't using changelog, put your release notes here (though you should
 consider using changelog). You can also add any additional sections you feel
 are necessary or important to include here. Please use the `## ` header.
+=======
+# stigs
+Puppet module for automatically configuring STIGS, while allowing granular control per STIG
+
+The Module is only planned to implement automatic STIGs for RedHat7, but it is designed to be able to
+work for any operating system.
+>>>>>>> c806564bd77801e6a4fb9204a0fee46510bc108c
