@@ -39,6 +39,5 @@ to 'present' to enable the STIG, or 'absent' to disable.
 
 ## Development
 
-I'm not terribly advanced with GIT, so my collaborative skills are lacking. If you
-are in the DOD and need
+I'm not terribly advanced with GIT, so my collaborative skills are lacking. Email me at lukepafford@gmail.com if you have any questions
 
