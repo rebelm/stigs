@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010010
-# Rule-ID: RHEL-07-010010_rule
-# Vuln-ID: RHEL-07-010010
+# Rule-ID: SV-86473r2_rule
+# Vuln-ID: V-71849
 # Severity: CAT 1
 # Class: Unclass
 

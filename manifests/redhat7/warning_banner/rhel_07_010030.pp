@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010030
-# Rule-ID: RHEL-07-010030_rule
-# Vuln-ID: RHEL-07-010030
+# Rule-ID: SV-86483r2_rule
+# Vuln-ID: V-71859
 # Severity: CAT II
 # Class: Unclass
 
@@ -16,7 +16,7 @@ class stigs::redhat7::warning_banner::rhel_07_010030 inherits stigs::redhat7::re
   file_line { 'Gnome-Banner_Enabled':
     ensure => $ensure,
     line   => 'banner-message-enable=true',
-    path   => '/etc/dconf/db/local.d/01-banner',
+    path   => '/etc/dconf/db/local.d/01-banner-message',
   }
 
 }
