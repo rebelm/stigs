@@ -1,5 +1,5 @@
 
-# stig
+# stigs
 
 #### Table of Contents
 
