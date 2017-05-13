@@ -32,5 +32,6 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::authentication::rhel_07_010180
   include stigs::redhat7::authentication::rhel_07_010190
   include stigs::redhat7::authentication::rhel_07_010200
+  include stigs::redhat7::authentication::rhel_07_010210
 
 }
