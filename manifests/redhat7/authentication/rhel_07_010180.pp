@@ -13,7 +13,7 @@ class stigs::redhat7::authentication::rhel_07_010180 inherits stigs::redhat7::re
     $ensure = 'absent'
   }
 
-  file_line { 'Authentication-login-defs_sha512':
+  file_line { 'Authentication-login-defs_ENCRYPT_METHOD':
     ensure            => $ensure,
     line              => 'ENCRYPT_METHOD SHA512',
     path              => '/etc/login.defs',

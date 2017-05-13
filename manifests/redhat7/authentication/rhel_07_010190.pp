@@ -13,7 +13,7 @@ class stigs::redhat7::authentication::rhel_07_010190 inherits stigs::redhat7::re
     $ensure = 'absent'
   }
 
-  file_line { 'Authentication-libuser_sha512':
+  file_line { 'Authentication-libuser-crypt_style':
     ensure            => $ensure,
     line              => 'crypt_style = sha512',
     after             => '^\[defaults\]',
