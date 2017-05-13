@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # stig
 
 #### Table of Contents
@@ -15,14 +15,15 @@
 
 ## Description
 
-Start with a one- or two-sentence summary of what the module does and/or what
-problem it solves. This is your 30-second elevator pitch for your module.
-Consider including OS/Puppet version it works with.
+Puppet module for automatically configuring STIGS, while allowing granular control per STIG
 
-You can give more descriptive information in a second paragraph. This paragraph
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?" If your module has a range of functionality (installation, configuration,
-management, etc.), this is the time to mention it.
+The Module is only planned to implement automatic STIGs for RedHat7, but it is designed to be able to
+work for any operating system.
+
+The key benefits for using this module to STIG your RedHat 7 environment:
+* Granular - you can turn each STIG off or on by modifying the params.pp manifest
+* FAST     - Applying the remediation to a machine takes less than a minute.
+* Simple   - Perhaps the most important part, if you have basic Puppet knowledge, you should be able eto explore this module and understand exactly how each STIG fix was implemented.
 
 ## Setup
 
@@ -50,32 +51,19 @@ here.
 
 ### Beginning with stig
 
-The very basic steps needed for a user to get the module up and running. This
-can include setup steps, if necessary, or it can be an example of the most
-basic use of the module.
+puppet apply /path/to/modules/stigs/examples/init.pp
 
 ## Usage
 
-This section is where you describe how to customize, configure, and do the
-fancy stuff with your module here. It's especially helpful if you include usage
-examples and code samples for doing things with your module.
+Modify file /path/to/modules/stigs/manifests/redhat7/params.pp.
+Each STIG has a variable with the STIG ID as the variable name. Set this value
+to 'present' to enable the STIG, or 'absent' to disable.
 
-## Reference
-
-Here, include a complete list of your module's classes, types, providers,
-facts, along with the parameters for each. Users refer to this section (thus
-the name "Reference") to find specific details; most users don't read it per
-se.
-
-## Limitations
-
-This is where you list OS compatibility, version compatibility, etc. If there
-are Known Issues, you might want to include them under their own heading here.
 
 ## Development
 
-Since your module is awesome, other users will want to play with it. Let them
-know what the ground rules for contributing are.
+I'm not terribly advanced with GIT, so my collaborative skills are lacking. If you
+are in the DOD and need
 
 ## Release Notes/Contributors/Etc. **Optional**
 
