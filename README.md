@@ -23,7 +23,7 @@ work for any operating system.
 The key benefits for using this module to STIG your RedHat 7 environment:
 * Granular - you can turn each STIG off or on by modifying the params.pp manifest
 * FAST     - Applying the module takes less than a minute (First time use may be longer due to software package installation/removal)
-* Simple   - Perhaps the most important part, if you have basic Puppet knowledge, you should be able eto explore this module and understand exactly how each STIG fix was implemented.
+* Simple   - Perhaps the most important part, if you have basic Puppet knowledge, you should be able to explore this module and understand exactly how each STIG fix was implemented.
 
 ## Setup
 
