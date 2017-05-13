@@ -28,7 +28,7 @@ class stigs::redhat7::software_integrity::rhel_07_010020 inherits stigs::redhat7
     command => '/usr/local/bin/enforce-system-hashes.sh',
     user    => 'root',
     hour    => 2,
-    minute  => 5,
+    minute  => 10,
     require =>  File['/usr/local/bin/enforce-system-hashes.sh'],
   }
 

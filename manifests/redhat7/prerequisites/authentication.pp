@@ -29,7 +29,8 @@ class stigs::redhat7::prerequisites::authentication inherits stigs::redhat7::red
     group  => 'root',
     mode   => '0644',
     before =>  [ Class['stigs::redhat7::authentication::rhel_07_010180'],
-                 Class['stigs::redhat7::authentication::rhel_07_010200'], ],
+                 Class['stigs::redhat7::authentication::rhel_07_010200'], 
+                 Class['stigs::redhat7::authentication::rhel_07_010220'], ],
   }
 
 }

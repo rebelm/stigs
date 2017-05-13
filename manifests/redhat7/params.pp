@@ -18,12 +18,14 @@ class stigs::redhat7::params (
   String $rhel_07_010130 = 'present',
   String $rhel_07_010140 = 'present',
   String $rhel_07_010150 = 'present',
-  String $rhel_07_010160 = 'present',
+  String $rhel_07_010160 = 'absent',
   String $rhel_07_010170 = 'present',
   String $rhel_07_010180 = 'present',
   String $rhel_07_010190 = 'present',
   String $rhel_07_010200 = 'present',
   String $rhel_07_010210 = 'present',
+  String $rhel_07_010220 = 'present',
+  String $rhel_07_010230 = 'present',
 ){
 
 }
