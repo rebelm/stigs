@@ -5,6 +5,7 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
 
   include stigs::redhat7::software_integrity::rhel_07_010010
   include stigs::redhat7::software_integrity::rhel_07_010020
+  
   include stigs::redhat7::prerequisites::gnome
   include stigs::redhat7::warning_banner::rhel_07_010030 
   include stigs::redhat7::warning_banner::rhel_07_010031 
@@ -15,6 +16,8 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::software::rhel_07_010072
   include stigs::redhat7::desktop::rhel_07_010073
   include stigs::redhat7::desktop::rhel_07_010074
+
+  include stigs::redhat7::prerequisites::password_complexity
   include stigs::redhat7::password_complexity::rhel_07_010090
   include stigs::redhat7::password_complexity::rhel_07_010100
   include stigs::redhat7::password_complexity::rhel_07_010110
@@ -23,7 +26,8 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::password_complexity::rhel_07_010140
   include stigs::redhat7::password_complexity::rhel_07_010150
   include stigs::redhat7::password_complexity::rhel_07_010160
-  include stigs::redhat7::authentication::prerequisites
+
+  include stigs::redhat7::prerequisites::authentication
   include stigs::redhat7::authentication::rhel_07_010170
 
 }
