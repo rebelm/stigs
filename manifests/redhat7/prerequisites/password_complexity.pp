@@ -17,4 +17,4 @@ class stigs::redhat7::prerequisites::password_complexity inherits stigs::redhat7
                  Class['stigs::redhat7::password_complexity::rhel_07_010160'], ],
   }
 
-
+}

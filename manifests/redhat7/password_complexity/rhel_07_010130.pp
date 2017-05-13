@@ -14,9 +14,11 @@ class stigs::redhat7::password_complexity::rhel_07_010130 inherits stigs::redhat
   }
 
   file_line { 'Password-difok':
-    ensure => $ensure,
-    line   => 'difok = 8',
-    path   => '/etc/security/pwquality.conf', 
+    ensure  => $ensure,
+    line    => 'difok = 8',
+    path    => '/etc/security/pwquality.conf', 
+    match   => '^difok',
+    replace => 'true',
   }
 
 }

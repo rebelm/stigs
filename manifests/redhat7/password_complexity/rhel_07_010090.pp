@@ -14,9 +14,11 @@ class stigs::redhat7::password_complexity::rhel_07_010090 inherits stigs::redhat
   }
 
   file_line { 'Password-ucredit':
-    ensure => $ensure,
-    line   => 'ucredit = -1',
-    path   => '/etc/security/pwquality.conf', 
+    ensure  => $ensure,
+    line    => 'ucredit = -1',
+    path    => '/etc/security/pwquality.conf', 
+    match   => '^ucredit',
+    replace => 'true',
   }
 
 }

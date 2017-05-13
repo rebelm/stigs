@@ -14,9 +14,11 @@ class stigs::redhat7::password_complexity::rhel_07_010160 inherits stigs::redhat
   }
 
   file_line { 'Password-maxclassrepeat':
-    ensure => $ensure,
-    line   => 'maxclassrepeat = 4',
-    path   => '/etc/security/pwquality.conf', 
+    ensure  => $ensure,
+    line    => 'maxclassrepeat = 4',
+    path    => '/etc/security/pwquality.conf', 
+    match   => '^maxclassrepeat',
+    replace => 'true',
   }
 
 }

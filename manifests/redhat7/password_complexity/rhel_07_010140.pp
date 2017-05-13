@@ -14,9 +14,11 @@ class stigs::redhat7::password_complexity::rhel_07_010140 inherits stigs::redhat
   }
 
   file_line { 'Password-minclass':
-    ensure => $ensure,
-    line   => 'minclass = 4',
-    path   => '/etc/security/pwquality.conf', 
+    ensure  => $ensure,
+    line    => 'minclass = 4',
+    path    => '/etc/security/pwquality.conf', 
+    match   => '^minclass',
+    replace => 'true',
   }
 
 }

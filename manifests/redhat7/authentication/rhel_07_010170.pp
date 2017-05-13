@@ -13,7 +13,7 @@ class stigs::redhat7::authentication::rhel_07_010170 inherits stigs::redhat7::re
     $ensure = 'absent'
   }
 
-  file_line { 'Authentication-sha512':
+  file_line { 'Authentication-PAM_SHA512':
     ensure            => $ensure,
     line              => 'password    sufficient    pam_unix.so sha512',
     after             => '^password.*requisite.*pam_pwquality.so|^password',

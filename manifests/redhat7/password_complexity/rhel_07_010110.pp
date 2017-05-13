@@ -17,6 +17,8 @@ class stigs::redhat7::password_complexity::rhel_07_010110 inherits stigs::redhat
     ensure => $ensure,
     line   => 'dcredit = -1',
     path   => '/etc/security/pwquality.conf', 
+    match  => '^dcredit',
+    replace => 'true',
   }
 
 }

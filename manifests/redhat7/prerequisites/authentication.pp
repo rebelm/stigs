@@ -12,7 +12,8 @@ class stigs::redhat7::prerequisites::authentication inherits stigs::redhat7::red
   file { '/etc/pam.d/system-auth':
     ensure  => 'link',
     target  => '/etc/pam.d/system-auth-ac',
-    before  => [ Class['stigs::redhat7::authentication::rhel_07_010170'], ],
+    before  => [ Class['stigs::redhat7::authentication::rhel_07_010170'], 
+                 Class['stigs::redhat7::authentication::rhel_07_010180'], ],
   }
 
 }
