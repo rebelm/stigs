@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010220
-# Rule-ID: RHEL-07-010220_rule
-# Vuln-ID: RHEL-07-010220
+# Rule-ID: SV-86547r2_rule
+# Vuln-ID: V-71923
 # Severity: CAT II
 # Class: Unclass
 
@@ -13,11 +13,12 @@ class stigs::redhat7::authentication::rhel_07_010220 inherits stigs::redhat7::re
     $ensure = 'absent'
   }
 
-  file_line { 'Authentication-login_defs-PASS_MAX_DAYS':
+  file_line { 'Authentication-libuser-crypt_style':
     ensure            => $ensure,
-    line              => 'PASS_MAX_DAYS 60',
-    path              => '/etc/login.defs',
-    match             => '^PASS_MAX_DAYS',
+    line              => 'crypt_style = sha512',
+    after             => '^\[defaults\]',
+    path              => '/etc/libuser.conf',
+    match             => '^crypt_style',
     replace           => 'true',
     match_for_absence => 'false',
   }

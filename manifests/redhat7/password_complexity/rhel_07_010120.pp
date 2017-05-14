@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010120
-# Rule-ID: RHEL-07-010120_rule
-# Vuln-ID: RHEL-07-010120
+# Rule-ID: SV-86527r2_rule
+# Vuln-ID: V-71903
 # Severity: CAT II
 # Class: Unclass
 
@@ -13,11 +13,11 @@ class stigs::redhat7::password_complexity::rhel_07_010120 inherits stigs::redhat
     $ensure = 'absent'
   }
 
-  file_line { 'Password-ocredit':
+  file_line { 'Password-ucredit':
     ensure  => $ensure,
-    line    => 'ocredit = -1',
+    line    => 'ucredit = -1',
     path    => '/etc/security/pwquality.conf', 
-    match   => '^ocredit',
+    match   => '^ucredit',
     replace => 'true',
   }
 

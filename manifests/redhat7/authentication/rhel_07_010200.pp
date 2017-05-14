@@ -1,24 +1,28 @@
 # STIG-ID: RHEL-07-010200
-# Rule-ID: RHEL-07-010200_rule
-# Vuln-ID: RHEL-07-010200
+# Rule-ID: SV-86543r1_rule
+# Vuln-ID: V-71919
 # Severity: CAT II
 # Class: Unclass
 
 class stigs::redhat7::authentication::rhel_07_010200 inherits stigs::redhat7::redhat7 {
 
-  if $rhel_07_010200 == 'present' {
+  # Stig rhel_07_01024 modifies the same exact file_line in the same file
+  # This manfiest should naturally only run when stig rhel_07_010240 is absent
+  if ($rhel_07_010200 == 'present') and ($rhel_07_010240 == 'absent') {
     $ensure = 'present'
   }
   else {
     $ensure = 'absent'
   }
 
-  file_line { 'Authentication-login_defs-PASS_MIN_DAYS':
+  file_line { 'Authentication-PAM_SHA512':
     ensure            => $ensure,
-    line              => 'PASS_MIN_DAYS 1',
-    path              => '/etc/login.defs',
-    match             => '^PASS_MIN_DAYS',
+    line              => 'password    sufficient    pam_unix.so sha512',
+    after             => '^password.*requisite.*pam_pwquality.so|^password',
+    path              => '/etc/pam.d/system-auth', 
+    match             => '^password.*sufficient.*pam_unix.so',
     replace           => 'true',
+    multiple          => 'true',
     match_for_absence => 'false',
   }
 

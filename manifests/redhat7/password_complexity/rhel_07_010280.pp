@@ -1,12 +1,12 @@
-# STIG-ID: RHEL-07-010250
-# Rule-ID: RHEL-07-010250_rule
-# Vuln-ID: RHEL-07-010250
+# STIG-ID: RHEL-07-010280
+# Rule-ID: Sv-86559r1_rule
+# Vuln-ID: V-71935
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::password_complexity::rhel_07_010250 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::password_complexity::rhel_07_010280 inherits stigs::redhat7::redhat7 {
 
-  if $rhel_07_010250 == 'present' {
+  if $rhel_07_010280 == 'present' {
     $ensure = 'present'
   }
   else {

@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010150
-# Rule-ID: RHEL-07-010150_rule
-# Vuln-ID: RHEL-07-010150
+# Rule-ID: SV-86533r1_rule
+# Vuln-ID: V-71909
 # Severity: CAT II
 # Class: Unclass
 
@@ -13,11 +13,11 @@ class stigs::redhat7::password_complexity::rhel_07_010150 inherits stigs::redhat
     $ensure = 'absent'
   }
 
-  file_line { 'Password-maxrepeat':
+  file_line { 'Password-ocredit':
     ensure  => $ensure,
-    line    => 'maxrepeat = 2',
+    line    => 'ocredit = -1',
     path    => '/etc/security/pwquality.conf', 
-    match   => '^maxrepeat',
+    match   => '^ocredit',
     replace => 'true',
   }
 

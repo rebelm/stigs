@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010160
-# Rule-ID: RHEL-07-010160_rule
-# Vuln-ID: RHEL-07-010160
+# Rule-ID: SV-86535r1_rule
+# Vuln-ID: V-71911
 # Severity: CAT II
 # Class: Unclass
 
@@ -13,11 +13,11 @@ class stigs::redhat7::password_complexity::rhel_07_010160 inherits stigs::redhat
     $ensure = 'absent'
   }
 
-  file_line { 'Password-maxclassrepeat':
+  file_line { 'Password-difok':
     ensure  => $ensure,
-    line    => 'maxclassrepeat = 4',
+    line    => 'difok = 8',
     path    => '/etc/security/pwquality.conf', 
-    match   => '^maxclassrepeat',
+    match   => '^difok',
     replace => 'true',
   }
 

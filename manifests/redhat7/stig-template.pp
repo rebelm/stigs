@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-
-# Rule-ID: RHEL-07-_rule
-# Vuln-ID: RHEL-07-
+# Rule-ID: SV-86XXXxx_rule
+# Vuln-ID: V-7XXXX
 # Severity: CAT
 # Class: Unclass
 

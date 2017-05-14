@@ -23,7 +23,8 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     mode   => '0644',
     before =>  [ Class['stigs::redhat7::desktop::rhel_07_010060'],
                  Class['stigs::redhat7::desktop::rhel_07_010070'],
-                 Class['stigs::redhat7::desktop::rhel_07_010074'], ],
+                 Class['stigs::redhat7::desktop::rhel_07_010100'],
+                 Class['stigs::redhat7::desktop::rhel_07_010110'], ],
   } ->
   file_line { 'Gnome-Screensaver':
     ensure  => 'present',
@@ -60,7 +61,7 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     group   => 'root',
     mode    => '644',
     require => File['/etc/dconf/db/local.d/locks'],
-    before  =>  [ Class['stigs::redhat7::desktop::rhel_07_010071'], ],
+    before  =>  [ Class['stigs::redhat7::desktop::rhel_07_010080'], ],
   }
 
 

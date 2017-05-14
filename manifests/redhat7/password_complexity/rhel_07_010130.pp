@@ -1,6 +1,6 @@
 # STIG-ID: RHEL-07-010130
-# Rule-ID: RHEL-07-010130_rule
-# Vuln-ID: RHEL-07-010130
+# Rule-ID: SV-86529r2_rule
+# Vuln-ID: V-71905
 # Severity: CAT II
 # Class: Unclass
 
@@ -13,11 +13,11 @@ class stigs::redhat7::password_complexity::rhel_07_010130 inherits stigs::redhat
     $ensure = 'absent'
   }
 
-  file_line { 'Password-difok':
+  file_line { 'Password-lcredit':
     ensure  => $ensure,
-    line    => 'difok = 8',
+    line    => 'lcredit = -1',
     path    => '/etc/security/pwquality.conf', 
-    match   => '^difok',
+    match   => '^lcredit',
     replace => 'true',
   }
 

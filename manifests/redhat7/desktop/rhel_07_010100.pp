@@ -1,12 +1,12 @@
-# STIG-ID: RHEL-07-010073
-# Rule-ID: RHEL-07-010073_rule
-# Vuln-ID: RHEL-07-010073
+# STIG-ID: RHEL-07-010100
+# Rule-ID: SV-86523r1_rule
+# Vuln-ID: V-71899
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::desktop::rhel_07_010073 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::desktop::rhel_07_010100 inherits stigs::redhat7::redhat7 {
 
-  if $rhel_07_010073 == 'present' {
+  if $rhel_07_010100 == 'present' {
     $ensure = 'present'
   }
   else {

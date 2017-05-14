@@ -7,14 +7,15 @@ class stigs::redhat7::prerequisites::password_complexity inherits stigs::redhat7
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    before =>  [ Class['stigs::redhat7::password_complexity::rhel_07_010090'], 
-                 Class['stigs::redhat7::password_complexity::rhel_07_010100'], 
-                 Class['stigs::redhat7::password_complexity::rhel_07_010110'], 
-                 Class['stigs::redhat7::password_complexity::rhel_07_010120'], 
+    before =>  [ Class['stigs::redhat7::password_complexity::rhel_07_010120'], 
                  Class['stigs::redhat7::password_complexity::rhel_07_010130'], 
                  Class['stigs::redhat7::password_complexity::rhel_07_010140'], 
                  Class['stigs::redhat7::password_complexity::rhel_07_010150'], 
-                 Class['stigs::redhat7::password_complexity::rhel_07_010160'], ],
+                 Class['stigs::redhat7::password_complexity::rhel_07_010160'],
+                 Class['stigs::redhat7::password_complexity::rhel_07_010170'],
+                 Class['stigs::redhat7::password_complexity::rhel_07_010180'],
+                 Class['stigs::redhat7::password_complexity::rhel_07_010190'],
+                 Class['stigs::redhat7::password_complexity::rhel_07_010280'], ],
   }
 
 }
