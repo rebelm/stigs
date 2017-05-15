@@ -4,7 +4,7 @@
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::authentication::rhel_07_010200 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::authentication::pam::rhel_07_010200 inherits stigs::redhat7::redhat7 {
 
   # Stig rhel_07_01024 modifies the same exact file_line in the same file
   # This manfiest should naturally only run when stig rhel_07_010240 is absent

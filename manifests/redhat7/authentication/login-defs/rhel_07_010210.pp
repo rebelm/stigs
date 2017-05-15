@@ -1,10 +1,10 @@
 # STIG-ID: RHEL-07-010210
-# Rule-ID: RHEL-07-010210_rule
-# Vuln-ID: RHEL-07-010210
+# Rule-ID: SV-86545r1_rule
+# Vuln-ID: V-71921
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::authentication::rhel_07_010210 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::authentication::login-defs::rhel_07_010210 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010210 == 'present' {
     $ensure = 'present'

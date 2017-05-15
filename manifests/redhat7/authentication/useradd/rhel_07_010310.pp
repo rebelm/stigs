@@ -1,12 +1,12 @@
-# STIG-ID: RHEL-07-010280
-# Rule-ID: SV-86559r1_rule
-# Vuln-ID: V-71935
+# STIG-ID: RHEL-07-010310
+# Rule-ID: SV-86565r2_rule
+# Vuln-ID: V-71941
 # Severity: CAT I
 # Class: Unclass
 
-class stigs::redhat7::authentication::rhel_07_010280 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::authentication::useradd::rhel_07_010310 inherits stigs::redhat7::redhat7 {
 
-  if $rhel_07_010280 == 'present' {
+  if $rhel_07_010310 == 'present' {
     $ensure = 'present'
   }
   else {
@@ -19,7 +19,6 @@ class stigs::redhat7::authentication::rhel_07_010280 inherits stigs::redhat7::re
     path              => '/etc/default/useradd',
     match             => '^INACTIVE',
     replace           => 'true',
-    match_for_absence => 'false',
   }
 
 }

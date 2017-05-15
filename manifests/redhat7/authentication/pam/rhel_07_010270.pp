@@ -4,7 +4,7 @@
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::authentication::rhel_07_010270 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::authentication::pam::rhel_07_010270 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010270 == 'present' {
     $ensure = 'present'
