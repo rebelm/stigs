@@ -6,9 +6,9 @@
 
 class stigs::redhat7::authentication::pam::rhel_07_010200 inherits stigs::redhat7::redhat7 {
 
-  # Stig rhel_07_01024 modifies the same exact file_line in the same file
+  # Stig rhel_07_010270 modifies the same exact file_line in the same file
   # This manfiest should naturally only run when stig rhel_07_010240 is absent
-  if ($rhel_07_010200 == 'present') and ($rhel_07_010240 == 'absent') {
+  if ($rhel_07_010200 == 'present') and ($rhel_07_010270 == 'absent') {
     $ensure = 'present'
   }
   else {

@@ -11,13 +11,13 @@ class stigs::redhat7::params (
   String $rhel_07_010090 = 'present',
   String $rhel_07_010100 = 'present',
   String $rhel_07_010110 = 'present',
-  String $rhel_07_010120 = 'present',
-  String $rhel_07_010130 = 'present',
-  String $rhel_07_010140 = 'present',
-  String $rhel_07_010150 = 'present',
-  String $rhel_07_010160 = 'present',
-  String $rhel_07_010170 = 'present',
-  String $rhel_07_010180 = 'present',
+  String $rhel_07_010120 = 'absent',
+  String $rhel_07_010130 = 'absent',
+  String $rhel_07_010140 = 'absent',
+  String $rhel_07_010150 = 'absent',
+  String $rhel_07_010160 = 'absent',
+  String $rhel_07_010170 = 'absent',
+  String $rhel_07_010180 = 'absent',
   # rhel_07_010190 password requirement is too strict
   String $rhel_07_010190 = 'absent',
   String $rhel_07_010200 = 'present',
@@ -32,14 +32,8 @@ class stigs::redhat7::params (
   String $rhel_07_010290 = 'present',
   String $rhel_07_010300 = 'present',
   String $rhel_07_010310 = 'present',
+  # rhel_07_010320 account lockout is too strict
+  String $rhel_07_010320 = 'absent',
 ){
 
 }
-
-
-# NOTES
-
-# STIGS rhel_07_010170 and rhel_07_010240 should not both be absent
-
-# probably want to disable 010190
-# make sure to modify prerequisite files as i go through conversion

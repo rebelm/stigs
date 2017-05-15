@@ -11,8 +11,8 @@
 # The puppet manifests to accurately predict file line placements in the PAM file.
 
 PAM_CONFIGS=(
-/etc/pam.d/system-auth
-/etc/pam.d/password-auth
+/etc/pam.d/system-auth-ac
+/etc/pam.d/password-auth-ac
 )
 TMP_FILE="/tmp/pam-config.tmp"
 
