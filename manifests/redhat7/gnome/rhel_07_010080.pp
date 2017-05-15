@@ -4,7 +4,7 @@
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::desktop::rhel_07_010080 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::gnome::rhel_07_010080 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010080 == 'present' {
     $ensure = 'present'
@@ -15,7 +15,7 @@ class stigs::redhat7::desktop::rhel_07_010080 inherits stigs::redhat7::redhat7 {
 
   file_line { 'Session-Idle_Delay':
     ensure => $ensure,
-    line   => '/org/gnome/desktop/session/idle-delay',
+    line   => '/org/gnome/gnome/session/idle-delay',
     path   => '/etc/dconf/db/local.d/locks/session', 
   }
 

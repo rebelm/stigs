@@ -3,7 +3,7 @@
 # Vuln-ID: V-71861
 # Severity: CAT II
 # Class: Unclass
-class stigs::redhat7::warning_banner::rhel_07_010040 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::gnome::rhel_07_010040 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010040 == 'present' {
     $ensure = 'present'

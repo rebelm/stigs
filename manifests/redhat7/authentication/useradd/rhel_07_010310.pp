@@ -1,7 +1,7 @@
 # STIG-ID: RHEL-07-010310
 # Rule-ID: SV-86565r2_rule
 # Vuln-ID: V-71941
-# Severity: CAT I
+# Severity: CAT II
 # Class: Unclass
 
 class stigs::redhat7::authentication::useradd::rhel_07_010310 inherits stigs::redhat7::redhat7 {

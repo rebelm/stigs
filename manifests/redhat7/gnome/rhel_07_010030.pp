@@ -4,7 +4,7 @@
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::warning_banner::rhel_07_010030 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::gnome::rhel_07_010030 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010030 == 'present' {
     $ensure = 'present'

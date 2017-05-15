@@ -4,7 +4,7 @@
 # Severity: CAT I
 # Class: Unclass
 
-class stigs::redhat7::software_integrity::rhel_07_010020 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::system_integrity::rhel_07_010020 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010020 == 'present' {
     $file = 'file'

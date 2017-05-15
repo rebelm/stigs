@@ -4,7 +4,7 @@
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::password_complexity::rhel_07_010120 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::authentication::pwquality::rhel_07_010120 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010120 == 'present' {
     $ensure = 'present'

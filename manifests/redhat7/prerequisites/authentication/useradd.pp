@@ -4,8 +4,7 @@ class stigs::redhat7::prerequisites::authentication::useradd inherits stigs::red
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    before => [ Class['stigs::redhat7::authentication::useradd::rhel_07_010280'],
-                Class['stigs::redhat7::authentication::useradd::rhel_07_010310'] ],
+    before => [ Class['stigs::redhat7::authentication::useradd::rhel_07_010310'] ],
   }
 
 }

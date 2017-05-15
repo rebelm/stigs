@@ -4,7 +4,7 @@
 # Severity: CAT II
 # Class: Unclass
 
-class stigs::redhat7::desktop::rhel_07_010060 inherits stigs::redhat7::redhat7 {
+class stigs::redhat7::gnome::rhel_07_010060 inherits stigs::redhat7::redhat7 {
 
   if $rhel_07_010060 == 'present' {
     $ensure = 'present'
