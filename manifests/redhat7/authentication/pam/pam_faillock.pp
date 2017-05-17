@@ -5,6 +5,8 @@
 # As a result, This file is filled with ugly regular expressions.
 # Attempt to understand at your own risk
 
+# This manifest combines the functionality of the two STIGS if both are set to true
+
 class stigs::redhat7::authentication::pam::pam_faillock inherits stigs::redhat7::redhat7 {
 
   if ($rhel_07_010320 == 'present') and ($rhel_07_010330 == 'present') {

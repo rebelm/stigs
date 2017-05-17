@@ -46,5 +46,8 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::authentication::pam::pam_faillock
   include stigs::redhat7::authentication::pam::rhel_07_010320
   include stigs::redhat7::authentication::pam::rhel_07_010330
+  include stigs::redhat7::authentication::sudo::rhel_07_010340
+  include stigs::redhat7::authentication::sudo::rhel_07_010350
+  include stigs::redhat7::authentication::login_defs::rhel_07_010430
 
 }
