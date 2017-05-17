@@ -24,7 +24,8 @@ class stigs::redhat7::params (
   String $rhel_07_010210 = 'present',
   String $rhel_07_010220 = 'present',
   String $rhel_07_010230 = 'present',
-  String $rhel_07_010240 = 'present',
+  # rhel_07_010240 should be turned off for testing
+  String $rhel_07_010240 = 'absent',
   String $rhel_07_010250 = 'present',
   String $rhel_07_010260 = 'present',
   String $rhel_07_010270 = 'present',
@@ -32,8 +33,9 @@ class stigs::redhat7::params (
   String $rhel_07_010290 = 'present',
   String $rhel_07_010300 = 'present',
   String $rhel_07_010310 = 'present',
-  # rhel_07_010320 account lockout is too strict
+  # rhel_07_010320 and rhel_07_010330 account lockout is too strict
   String $rhel_07_010320 = 'absent',
+  String $rhel_07_010330 = 'absent',
 ){
 
 }

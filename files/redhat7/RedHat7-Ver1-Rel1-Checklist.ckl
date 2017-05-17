@@ -49,7 +49,7 @@
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>uuid</SID_NAME>
-                    <SID_DATA>e867080a-6de7-4b05-9169-e7028a4abad3</SID_DATA>
+                    <SID_DATA>addbc857-53ec-4c01-b741-56c4583b4dd2</SID_DATA>
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>notice</SID_NAME>
@@ -4003,13 +4003,9 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                 </STIG_DATA>
                 <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/useradd/rhel_07_010320.pp'
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/pam/rhel_07_010320.pp'
 
-WARNING: 
-The resources will guarentee the three lines exist every time
-However The resources will only guarentee the three lines exist in the correct location when ran the first time
-This is because The file_line resouce appears incapable of 
-finding a regex in the 'match' and moving it to the 'after'
+
 </COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
@@ -4127,9 +4123,9 @@ and run the "authconfig" command.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002238</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/pam/rhel_07_010330.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>

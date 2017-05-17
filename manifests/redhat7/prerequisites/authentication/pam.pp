@@ -38,8 +38,17 @@ class stigs::redhat7::prerequisites::authentication::pam inherits stigs::redhat7
   ->
   exec { '/usr/local/bin/puppetize-pam.sh':
     unless => "/usr/bin/grep 'PUPPET MANAGED FILE' /etc/pam.d/system-auth",
-    before =>  [ Class['stigs::redhat7::authentication::pam::rhel_07_010320'], ],
+    before =>  [ Class['stigs::redhat7::authentication::pam::rhel_07_010320'],
+                 Class['stigs::redhat7::authentication::pam::rhel_07_010330'],
+                 Class['stigs::redhat7::authentication::pam::pam_faillock'], ],
   }
-
+  ->
+  file { '/usr/local/bin/purge-pam-faillock.sh':
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0750',
+    source => 'puppet:///modules/stigs/redhat7/purge-pam-faillock.sh',
+  }
 
 }
