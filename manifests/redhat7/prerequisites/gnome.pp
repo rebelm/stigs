@@ -64,6 +64,14 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     before  =>  [ Class['stigs::redhat7::gnome::rhel_07_010080'], ],
   }
 
+  # custom.conf config file
+  file { '/etc/gdm/custom.conf':
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+    before =>  [ Class['stigs::redhat7::gnome::rhel_07_010440'], ],
+  }
 
  
 }
