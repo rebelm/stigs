@@ -13,13 +13,13 @@ class stigs::redhat7::params (
   String $rhel_07_010090 = 'present',
   String $rhel_07_010100 = 'present',
   String $rhel_07_010110 = 'present',
-  String $rhel_07_010120 = 'absent',
-  String $rhel_07_010130 = 'absent',
-  String $rhel_07_010140 = 'absent',
-  String $rhel_07_010150 = 'absent',
-  String $rhel_07_010160 = 'absent',
-  String $rhel_07_010170 = 'absent',
-  String $rhel_07_010180 = 'absent',
+  String $rhel_07_010120 = 'present',
+  String $rhel_07_010130 = 'present',
+  String $rhel_07_010140 = 'present',
+  String $rhel_07_010150 = 'present',
+  String $rhel_07_010160 = 'present',
+  String $rhel_07_010170 = 'present',
+  String $rhel_07_010180 = 'present',
   # rhel_07_010190 enable in production environment
   String $rhel_07_010190 = 'absent',
   String $rhel_07_010200 = 'present',
@@ -47,6 +47,13 @@ class stigs::redhat7::params (
   String $rhel_07_010470 = 'present',
   String $rhel_07_020000 = 'present',
   String $rhel_07_020010 = 'present',
+  String $rhel_07_020050 = 'present',
+  String $rhel_07_020060 = 'present',
+  String $rhel_07_020070 = 'present',
+  # rhel_07_010190 enable in production environment
+  String $rhel_07_020100 = 'present',
+  String $rhel_07_020110 = 'present',
+  String $rhel_07_020200 = 'present',
 ){
 
 }
