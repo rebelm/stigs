@@ -5,7 +5,9 @@ class stigs::redhat7::prerequisites::authentication::ssh inherits stigs::redhat7
     owner  => 'root',
     group  => 'root',
     mode   => '0600',
-    before => [ Class['stigs::redhat7::authentication::ssh::rhel_07_010300'], ],
+    before => [ Class['stigs::redhat7::authentication::ssh::rhel_07_010300'],
+                Class['stigs::redhat7::authentication::ssh::rhel_07_010460'],
+                Class['stigs::redhat7::authentication::ssh::rhel_07_010470'], ],
   }
 
 }

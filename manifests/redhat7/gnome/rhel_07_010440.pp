@@ -1,4 +1,4 @@
-# STIG-ID: RHEL-07-010440-
+# STIG-ID: RHEL-07-010440
 # Rule-ID: SV-86577r1_rule
 # Vuln-ID: V-71953
 # Severity: CAT I

@@ -1,4 +1,6 @@
 # Available options are either 'present' or 'absent'
+# 'present' means you will enforce the STIG on the system
+# 'absent' means the STIG will not be enforced
 class stigs::redhat7::params (
   String $rhel_07_010010 = 'present',
   String $rhel_07_010020 = 'present',
@@ -18,7 +20,7 @@ class stigs::redhat7::params (
   String $rhel_07_010160 = 'absent',
   String $rhel_07_010170 = 'absent',
   String $rhel_07_010180 = 'absent',
-  # rhel_07_010190 password requirement is too strict
+  # rhel_07_010190 enable in production environment
   String $rhel_07_010190 = 'absent',
   String $rhel_07_010200 = 'present',
   String $rhel_07_010210 = 'present',
@@ -40,6 +42,11 @@ class stigs::redhat7::params (
   String $rhel_07_010350 = 'present',
   String $rhel_07_010430 = 'present',
   String $rhel_07_010440 = 'present',
+  String $rhel_07_010450 = 'present',
+  String $rhel_07_010460 = 'present',
+  String $rhel_07_010470 = 'present',
+  String $rhel_07_020000 = 'present',
+  String $rhel_07_020010 = 'present',
 ){
 
 }

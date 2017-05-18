@@ -70,7 +70,8 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    before =>  [ Class['stigs::redhat7::gnome::rhel_07_010440'], ],
+    before =>  [ Class['stigs::redhat7::gnome::rhel_07_010440'],
+                 Class['stigs::redhat7::gnome::rhel_07_010450'], ],
   }
 
  
