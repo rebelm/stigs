@@ -1,6 +1,8 @@
 # Available options are either 'present' or 'absent'
 # 'present' means you will enforce the STIG on the system
 # 'absent' means the STIG will not be enforced
+#  Warning: setting a STIG value to 'absent' doesn't neccessarily mean
+#  the opposite of applying the STIG, just that the STIG isn't being enforced
 class stigs::redhat7::params (
   String $rhel_07_010010 = 'present',
   String $rhel_07_010020 = 'present',
@@ -54,6 +56,7 @@ class stigs::redhat7::params (
   String $rhel_07_020100 = 'present',
   String $rhel_07_020110 = 'present',
   String $rhel_07_020200 = 'present',
+  String $rhel_07_020210 = 'present',
 ){
 
 }
