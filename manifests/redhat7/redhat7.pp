@@ -9,6 +9,7 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::prerequisites::authentication::pwquality
   include stigs::redhat7::prerequisites::gnome
   include stigs::redhat7::prerequisites::yum
+  include stigs::redhat7::prerequisites::selinux
 
   include stigs::redhat7::system_integrity::rhel_07_010010
   include stigs::redhat7::system_integrity::rhel_07_010020
@@ -63,5 +64,9 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::services::rhel_07_020110
   include stigs::redhat7::system_integrity::rhel_07_020200
   include stigs::redhat7::system_integrity::rhel_07_020210
-
+  include stigs::redhat7::system_integrity::rhel_07_020220
+  include stigs::redhat7::gnome::rhel_07_020230
+  include stigs::redhat7::authentication::login_defs::rhel_07_020240
+  include stigs::redhat7::system_integrity::rhel_07_020320
+  include stigs::redhat7::system_integrity::rhel_07_020330
 }

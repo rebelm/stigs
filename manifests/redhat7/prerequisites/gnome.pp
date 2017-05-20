@@ -74,5 +74,20 @@ class stigs::redhat7::prerequisites::gnome inherits stigs::redhat7::redhat7 {
                  Class['stigs::redhat7::gnome::rhel_07_010450'], ],
   }
 
+  # CAD disable file
+  file { '/etc/dconf/db/local.d/00-disable-CAD':
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+  }
+  ->
+  file_line { 'Gnome-Media-keys':
+    ensure  => 'present',
+    line    => '[org/gnome/settings-daemon/plugins/media-keys]',
+    path    => '/etc/dconf/db/local.d/00-disable-CAD',
+    require => File['/etc/dconf/db/local.d/00-disable-CAD'],
+    before  => [ Class['stigs::redhat7::gnome::rhel_07_020230'] ],
+  }
  
 }

@@ -6833,9 +6833,9 @@ A reboot is required for the changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002696</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/system_integrity/rhel_07_020210.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -6960,9 +6960,9 @@ A reboot is required for the changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002696</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/system_integrity/rhel_07_020220.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -7084,9 +7084,9 @@ logout=’’</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/gnome/rhel_07_020230.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -7200,9 +7200,9 @@ UMASK  077</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/login_defs/rhel_07_020240.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -7315,9 +7315,9 @@ If the release is not supported by the vendor, this is a finding.</ATTRIBUTE_DAT
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Not_Applicable</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>This STIG cannot be automated. You simply have to purchase RedHat licenses.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -7438,9 +7438,9 @@ If the operating system is in non-compliance with the Information Assurance Vuln
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Not_Applicable</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>I will think about implementing this STIG at a later time. Most administrators want to manually apply patches, but I will see if i can come up with something that can optionally patch anything with a vulnerability older than 30 days.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>

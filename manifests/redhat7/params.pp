@@ -51,12 +51,20 @@ class stigs::redhat7::params (
   String $rhel_07_020010 = 'present',
   String $rhel_07_020050 = 'present',
   String $rhel_07_020060 = 'present',
-  String $rhel_07_020070 = 'present',
+  # rhel_07_020070 stopped me from installing software completely
+  # and packages are already ensured to be checked with GPG keys in 
+  # STIG 020050. Find out how to adhere to this STIG as it is a CAT 1.
+  String $rhel_07_020070 = 'absent',
   # rhel_07_010190 enable in production environment
   String $rhel_07_020100 = 'present',
   String $rhel_07_020110 = 'present',
   String $rhel_07_020200 = 'present',
   String $rhel_07_020210 = 'present',
+  String $rhel_07_020220 = 'present',
+  String $rhel_07_020230 = 'present',
+  String $rhel_07_020240 = 'present',
+  String $rhel_07_020320 = 'present',
+  String $rhel_07_020330 = 'present',
 ){
 
 }
