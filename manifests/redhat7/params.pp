@@ -55,7 +55,6 @@ class stigs::redhat7::params (
   # and packages are already ensured to be checked with GPG keys in 
   # STIG 020050. Find out how to adhere to this STIG as it is a CAT 1.
   String $rhel_07_020070 = 'absent',
-  # rhel_07_010190 enable in production environment
   String $rhel_07_020100 = 'present',
   String $rhel_07_020110 = 'present',
   String $rhel_07_020200 = 'present',
@@ -65,6 +64,32 @@ class stigs::redhat7::params (
   String $rhel_07_020240 = 'present',
   String $rhel_07_020320 = 'present',
   String $rhel_07_020330 = 'present',
+
+
+  String $rhel_07_040170 = 'present',
+
+  String $rhel_07_040300 = 'present',
+  String $rhel_07_040310 = 'present',
+  String $rhel_07_040320 = 'present',
+  String $rhel_07_040330 = 'present',
+  String $rhel_07_040340 = 'present',
+  String $rhel_07_040350 = 'present',
+  String $rhel_07_040360 = 'present',
+  # Enable RHEL_07_040370 once you are confident in your
+  # network SSH public key configurations
+  # Disabling root SSH login without proper planning can be
+  # disasterous
+  String $rhel_07_040370 = 'absent',
+  String $rhel_07_040380 = 'present',
+  String $rhel_07_040390 = 'present',
+  # STIGS rhel_07_040430 and rhel_07_040440 seem rediculous
+  # The justification is "kerberos increases the attack vector"
+  # Regardless, authentication is most secure, and conveinent with public keys
+  String $rhel_07_040430 = 'present',
+  String $rhel_07_040440 = 'present',
+  String $rhel_07_040450 = 'present',
+  String $rhel_07_040460 = 'present',
+  String $rhel_07_040470 = 'present',
 ){
 
 }

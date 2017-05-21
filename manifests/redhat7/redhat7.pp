@@ -69,4 +69,24 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::authentication::login_defs::rhel_07_020240
   include stigs::redhat7::system_integrity::rhel_07_020320
   include stigs::redhat7::system_integrity::rhel_07_020330
+
+
+  include stigs::redhat7::authentication::ssh::rhel_07_040170
+
+
+  include stigs::redhat7::software::rhel_07_040300
+  include stigs::redhat7::services::rhel_07_040310
+  include stigs::redhat7::authentication::ssh::rhel_07_040320
+  include stigs::redhat7::authentication::ssh::rhel_07_040330
+  include stigs::redhat7::authentication::ssh::rhel_07_040340
+  include stigs::redhat7::authentication::ssh::rhel_07_040350
+  include stigs::redhat7::authentication::ssh::rhel_07_040360
+  include stigs::redhat7::authentication::ssh::rhel_07_040370
+  include stigs::redhat7::authentication::ssh::rhel_07_040380
+  include stigs::redhat7::authentication::ssh::rhel_07_040390
+  include stigs::redhat7::authentication::ssh::rhel_07_040430
+  include stigs::redhat7::authentication::ssh::rhel_07_040440
+  include stigs::redhat7::authentication::ssh::rhel_07_040450
+  include stigs::redhat7::authentication::ssh::rhel_07_040460
+  include stigs::redhat7::authentication::ssh::rhel_07_040470
 }
