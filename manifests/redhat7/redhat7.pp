@@ -10,6 +10,7 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::prerequisites::gnome
   include stigs::redhat7::prerequisites::yum
   include stigs::redhat7::prerequisites::selinux
+  include stigs::redhat7::prerequisites::audit
 
   include stigs::redhat7::system_integrity::rhel_07_010010
   include stigs::redhat7::system_integrity::rhel_07_010020
@@ -70,6 +71,22 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::system_integrity::rhel_07_020320
   include stigs::redhat7::system_integrity::rhel_07_020330
 
+
+  include stigs::redhat7::audit::rhel_07_030370
+  include stigs::redhat7::audit::rhel_07_030380
+  include stigs::redhat7::audit::rhel_07_030390
+  include stigs::redhat7::audit::rhel_07_030400
+  include stigs::redhat7::audit::rhel_07_030410
+  include stigs::redhat7::audit::rhel_07_030420
+  include stigs::redhat7::audit::rhel_07_030430
+  include stigs::redhat7::audit::rhel_07_030440
+  include stigs::redhat7::audit::rhel_07_030450
+  include stigs::redhat7::audit::rhel_07_030460
+  include stigs::redhat7::audit::rhel_07_030470
+  include stigs::redhat7::audit::rhel_07_030480
+  include stigs::redhat7::audit::rhel_07_030490
+  include stigs::redhat7::audit::rhel_07_030500
+  include stigs::redhat7::audit::rhel_07_030510
 
   include stigs::redhat7::authentication::ssh::rhel_07_040170
 
