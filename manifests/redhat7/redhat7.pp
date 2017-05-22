@@ -87,6 +87,14 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::audit::rhel_07_030490
   include stigs::redhat7::audit::rhel_07_030500
   include stigs::redhat7::audit::rhel_07_030510
+  include stigs::redhat7::audit::rhel_07_030520
+  include stigs::redhat7::audit::rhel_07_030530
+  include stigs::redhat7::audit::rhel_07_030540
+  include stigs::redhat7::audit::rhel_07_030550
+  include stigs::redhat7::audit::rhel_07_030560
+  include stigs::redhat7::audit::rhel_07_030570
+  include stigs::redhat7::audit::rhel_07_030580
+  include stigs::redhat7::audit::rhel_07_030590
 
   include stigs::redhat7::authentication::ssh::rhel_07_040170
 

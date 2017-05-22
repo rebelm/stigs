@@ -20,7 +20,15 @@ class stigs::redhat7::prerequisites::audit inherits stigs::redhat7::redhat7 {
                  Class['stigs::redhat7::audit::rhel_07_030480'],
                  Class['stigs::redhat7::audit::rhel_07_030490'],
                  Class['stigs::redhat7::audit::rhel_07_030500'],
-                 Class['stigs::redhat7::audit::rhel_07_030510'], ],
+                 Class['stigs::redhat7::audit::rhel_07_030510'],
+                 Class['stigs::redhat7::audit::rhel_07_030520'],
+                 Class['stigs::redhat7::audit::rhel_07_030530'],
+                 Class['stigs::redhat7::audit::rhel_07_030540'],
+                 Class['stigs::redhat7::audit::rhel_07_030550'],
+                 Class['stigs::redhat7::audit::rhel_07_030560'],
+                 Class['stigs::redhat7::audit::rhel_07_030570'],
+                 Class['stigs::redhat7::audit::rhel_07_030580'],
+                 Class['stigs::redhat7::audit::rhel_07_030590'], ],
    }
 
 }

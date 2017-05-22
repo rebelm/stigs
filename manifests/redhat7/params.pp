@@ -80,6 +80,14 @@ class stigs::redhat7::params (
   String $rhel_07_030490 = 'present',
   String $rhel_07_030500 = 'present',
   String $rhel_07_030510 = 'present',
+  String $rhel_07_030520 = 'present',
+  String $rhel_07_030530 = 'present',
+  String $rhel_07_030540 = 'present',
+  String $rhel_07_030550 = 'present',
+  String $rhel_07_030560 = 'present',
+  String $rhel_07_030570 = 'present',
+  String $rhel_07_030580 = 'present',
+  String $rhel_07_030590 = 'present',
 
   String $rhel_07_040170 = 'present',
 
