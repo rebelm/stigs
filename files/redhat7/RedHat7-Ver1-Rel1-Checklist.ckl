@@ -16362,9 +16362,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030600.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -16491,9 +16491,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030610.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -16620,9 +16620,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030620.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -16749,9 +16749,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030630.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -16878,9 +16878,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030640.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17007,9 +17007,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030650.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17136,9 +17136,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030660.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17265,9 +17265,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030670.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17398,9 +17398,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030690.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17531,9 +17531,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030690.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17670,9 +17670,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030700.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17803,9 +17803,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030710.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -17936,9 +17936,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030720.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18069,9 +18069,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030730.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18198,9 +18198,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030740.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18323,9 +18323,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030750.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18448,9 +18448,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030760.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18573,9 +18573,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030770.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18702,9 +18702,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030780.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18831,9 +18831,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030790.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -18960,9 +18960,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030800.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19077,9 +19077,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000172</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030810.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19206,9 +19206,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000172</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030820.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19335,9 +19335,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000172</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030830.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19458,9 +19458,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000172</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030840.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19581,9 +19581,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000172</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030850.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19706,9 +19706,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000172</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030860.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19839,9 +19839,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002130</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030870.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -19965,9 +19965,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030880.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -20091,9 +20091,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030890.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -20217,9 +20217,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030900.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -20343,9 +20343,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030910.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -20469,9 +20469,9 @@ The audit daemon must be restarted for the changes to take effect.</ATTRIBUTE_DA
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002884</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/audit/rhel_07_030920.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>

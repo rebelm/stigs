@@ -95,6 +95,39 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::audit::rhel_07_030570
   include stigs::redhat7::audit::rhel_07_030580
   include stigs::redhat7::audit::rhel_07_030590
+  include stigs::redhat7::audit::rhel_07_030600
+  include stigs::redhat7::audit::rhel_07_030610
+  include stigs::redhat7::audit::rhel_07_030620
+  include stigs::redhat7::audit::rhel_07_030630
+  include stigs::redhat7::audit::rhel_07_030640
+  include stigs::redhat7::audit::rhel_07_030650
+  include stigs::redhat7::audit::rhel_07_030660
+  include stigs::redhat7::audit::rhel_07_030670
+  include stigs::redhat7::audit::rhel_07_030680
+  include stigs::redhat7::audit::rhel_07_030690
+  include stigs::redhat7::audit::rhel_07_030700
+  include stigs::redhat7::audit::rhel_07_030710
+  include stigs::redhat7::audit::rhel_07_030720
+  include stigs::redhat7::audit::rhel_07_030730
+  include stigs::redhat7::audit::rhel_07_030740
+  include stigs::redhat7::audit::rhel_07_030750
+  include stigs::redhat7::audit::rhel_07_030760
+  include stigs::redhat7::audit::rhel_07_030770
+  include stigs::redhat7::audit::rhel_07_030780
+  include stigs::redhat7::audit::rhel_07_030790
+  include stigs::redhat7::audit::rhel_07_030800
+  include stigs::redhat7::audit::rhel_07_030810
+  include stigs::redhat7::audit::rhel_07_030820
+  include stigs::redhat7::audit::rhel_07_030830
+  include stigs::redhat7::audit::rhel_07_030840
+  include stigs::redhat7::audit::rhel_07_030850
+  include stigs::redhat7::audit::rhel_07_030860
+  include stigs::redhat7::audit::rhel_07_030870
+  include stigs::redhat7::audit::rhel_07_030880
+  include stigs::redhat7::audit::rhel_07_030890
+  include stigs::redhat7::audit::rhel_07_030900
+  include stigs::redhat7::audit::rhel_07_030910
+  include stigs::redhat7::audit::rhel_07_030920
 
   include stigs::redhat7::authentication::ssh::rhel_07_040170
 
