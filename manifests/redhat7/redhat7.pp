@@ -123,6 +123,10 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::audit::rhel_07_030850
   include stigs::redhat7::audit::rhel_07_030860
   include stigs::redhat7::audit::rhel_07_030870
+  include stigs::redhat7::audit::rhel_07_030871
+  include stigs::redhat7::audit::rhel_07_030872
+  include stigs::redhat7::audit::rhel_07_030873
+  include stigs::redhat7::audit::rhel_07_030874
   include stigs::redhat7::audit::rhel_07_030880
   include stigs::redhat7::audit::rhel_07_030890
   include stigs::redhat7::audit::rhel_07_030900
