@@ -4,7 +4,7 @@
   "author": "lukepafford",
   "summary": "STIGS machine based on OS, and has ability to turn on/off individual STIGS",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/lukepafford/stigs",
   "project_page": null,
   "issues_url": null,
   "dependencies": [

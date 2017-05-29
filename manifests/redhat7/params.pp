@@ -47,6 +47,14 @@ class stigs::redhat7::params (
   String $rhel_07_010450 = 'present',
   String $rhel_07_010460 = 'present',
   String $rhel_07_010470 = 'present',
+  
+  # To use these two STIGS, you must create a grub password with
+  # the grub2-setpassword command, and save that file as
+  # puppet:///modules/stigs/files/redhat7/user.cfg
+  String $rhel_07_010480 = 'present',
+  String $rhel_07_010490 = 'present',
+
+
   String $rhel_07_020000 = 'present',
   String $rhel_07_020010 = 'present',
   String $rhel_07_020050 = 'present',
@@ -64,6 +72,10 @@ class stigs::redhat7::params (
   String $rhel_07_020240 = 'present',
   String $rhel_07_020320 = 'present',
   String $rhel_07_020330 = 'present',
+
+  String $rhel_07_021710 = 'present',
+
+  String $rhel_07_030000 = 'present',
 
   String $rhel_07_030370 = 'present',
   String $rhel_07_030380 = 'present',
@@ -150,6 +162,15 @@ class stigs::redhat7::params (
   String $rhel_07_040450 = 'present',
   String $rhel_07_040460 = 'present',
   String $rhel_07_040470 = 'present',
+  String $rhel_07_040500 = 'present',
+  String $rhel_07_040540 = 'present',
+  String $rhel_07_040550 = 'present',
+
+  String $rhel_07_040690 = 'present',
+  String $rhel_07_040700 = 'present',
+  String $rhel_07_040710 = 'present',
+
+  String $rhel_07_040800 = 'present',
 
 
 
