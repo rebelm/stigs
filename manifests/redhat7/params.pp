@@ -143,6 +143,8 @@ class stigs::redhat7::params (
   String $rhel_07_030910 = 'present',
   String $rhel_07_030920 = 'present',
 
+  String $rhel_07_040110 = 'present',
+  String $rhel_07_040160 = 'present',
   String $rhel_07_040170 = 'present',
 
   String $rhel_07_040300 = 'present',
@@ -159,6 +161,9 @@ class stigs::redhat7::params (
   String $rhel_07_040370 = 'absent',
   String $rhel_07_040380 = 'present',
   String $rhel_07_040390 = 'present',
+  String $rhel_07_040400 = 'present',
+  String $rhel_07_040410 = 'present',
+  String $rhel_07_040420 = 'present',
   # STIGS rhel_07_040430 and rhel_07_040440 seem rediculous
   # The justification is "kerberos increases the attack vector"
   # Regardless, authentication is most secure, and conveinent with public keys

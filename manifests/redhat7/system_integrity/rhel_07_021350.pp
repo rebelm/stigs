@@ -25,7 +25,7 @@ class stigs::redhat7::system_integrity::rhel_07_021350 inherits stigs::redhat7::
     refreshonly => 'true',
     subscribe   => Package['dracut-fips'],
   }
-
+  ->
   exec { '/usr/local/bin/enforce-fips-compliance.sh':
     refreshonly => 'true',
     subscribe   => Package['dracut-fips'],
@@ -38,6 +38,14 @@ class stigs::redhat7::system_integrity::rhel_07_021350 inherits stigs::redhat7::
     group  => 'root',
     mode   => '0570',
     before => Exec['/usr/local/bin/enforce-fips-compliance.sh'],
+  }
+
+  file { '/etc/sysconfig/prelink':
+    ensure  => $file,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => 'PRELINKING=no',
   }
 
 }

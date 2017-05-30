@@ -15,9 +15,9 @@ class stigs::redhat7::authentication::ssh::rhel_07_040710 inherits stigs::redhat
 
   file_line { 'Authentication-sshd-X11Forwarding':
     ensure            => $ensure,
-    line              => 'X11Fowarding yes',
+    line              => 'X11Forwarding yes',
     path              => '/etc/ssh/sshd_config',
-    match             => '^X11Fowarding',
+    match             => '^X11Forwarding',
     replace           => 'true',
     match_for_absence => 'false',
     multiple          => 'true',

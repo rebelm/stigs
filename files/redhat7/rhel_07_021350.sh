@@ -1,5 +1,28 @@
 #!/bin/bash
 
+# WARNING: The following code performs ugly text parsing.
+# Try to understand at your own risk
+
+
+# We want this function to always run, as it will always be beneficial
+# for the grub command line to find the boot partitoin
+function Configure_Boot_Partition {
+
+	BOOT_PARTITION=$(df /boot | grep boot | awk '{print $1}')
+	UUID=$(blkid $BOOT_PARTITION | awk '{print $3}' | cut -d '"' -f2)
+
+	# Check if boot UUID has already been set
+	if ! grep 'GRUB_CMDLINE_LINUX' /etc/default/grub | grep "boot=UUID=$UUID" > /dev/null 2>&1; then
+		GRUB_BOOT=$(awk '
+			{if ($0 ~ "^GRUB_CMDLINE_LINUX=") 
+				{print substr($0, 1, length($0)-1);}}' /etc/default/grub | 
+			awk -v BOOT_UUID="${UUID}" '{ print $0" boot=UUID="BOOT_UUID"\""}')
+
+			sed -i -e "s|GRUB_CMDLINE_LINUX.*|$GRUB_BOOT|" /etc/default/grub
+	fi
+}
+
+
 # Check if dracut-fips is installed or not. This will determine if
 # grub should be set to fips=1 or have the subcommand removed
 function Check_Dracut {
@@ -29,6 +52,8 @@ function Build_Grub {
 
 }
 
+
+Configure_Boot_Partition
 Check_Dracut
 Set_Grub
 Build_Grub

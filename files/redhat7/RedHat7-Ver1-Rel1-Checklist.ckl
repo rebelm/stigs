@@ -49,7 +49,7 @@
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>uuid</SID_NAME>
-                    <SID_DATA>19dc3713-e19b-47b1-b711-9d8d30c438e8</SID_DATA>
+                    <SID_DATA>9f3a1afa-8576-4acf-b625-3689a04e4172</SID_DATA>
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>notice</SID_NAME>
@@ -21361,9 +21361,9 @@ The SSH service must be restarted for changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000803</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/ssh/rhel_07_040110.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -21483,9 +21483,9 @@ The SSH service must be restarted for changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002361</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/ssh/rhel_07_040160.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -23387,9 +23387,9 @@ The SSH service must be restarted for changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001453</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/ssh/rhel_07_040400.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -23506,9 +23506,9 @@ Change the mode of public host key files under "/etc/ssh" to "0644" with the fol
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/ssh/rhel_07_040410.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -23624,9 +23624,9 @@ If any file has a mode more permissive than "0600", this is a finding.</ATTRIBUT
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/authentication/ssh/rhel_07_040420.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
