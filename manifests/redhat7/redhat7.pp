@@ -79,6 +79,16 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::system_integrity::rhel_07_020320
   include stigs::redhat7::system_integrity::rhel_07_020330
 
+
+  include stigs::redhat7::homedir::rhel_07_020600
+  include stigs::redhat7::authentication::login_defs::rhel_07_020610
+  include stigs::redhat7::homedir::rhel_07_020620
+  include stigs::redhat7::homedir::rhel_07_020630
+  include stigs::redhat7::homedir::rhel_07_020640
+  include stigs::redhat7::homedir::rhel_07_020650
+  include stigs::redhat7::homedir::rhel_07_020660
+  include stigs::redhat7::homedir::rhel_07_020670
+
   include stigs::redhat7::system_integrity::rhel_07_021350
 
 

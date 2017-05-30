@@ -9,7 +9,8 @@ class stigs::redhat7::prerequisites::authentication::login_defs inherits stigs::
                  Class['stigs::redhat7::authentication::login_defs::rhel_07_010230'],
                  Class['stigs::redhat7::authentication::login_defs::rhel_07_010250'],
                  Class['stigs::redhat7::authentication::login_defs::rhel_07_010430'], 
-                 Class['stigs::redhat7::authentication::login_defs::rhel_07_020240'], ],
+                 Class['stigs::redhat7::authentication::login_defs::rhel_07_020240'],
+                 Class['stigs::redhat7::authentication::login_defs::rhel_07_020610'], ],
   }
 
 }
