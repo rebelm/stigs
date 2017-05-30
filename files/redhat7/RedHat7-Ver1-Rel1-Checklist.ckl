@@ -7320,7 +7320,7 @@ If the release is not supported by the vendor, this is a finding.</ATTRIBUTE_DAT
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Applicable</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
                 <COMMENTS>This STIG cannot be automated. You simply have to purchase RedHat licenses.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
@@ -7786,9 +7786,9 @@ If the account is associated with system commands or applications, the UID shoul
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This STIG will require me to determine all the known system accounts. I should probably build an array of system accounts, and loop through it to determine if the account is system account or not</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/system_integrity/rhel_07_020310.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -11536,9 +11536,11 @@ Reboot the system for the changes to take effect.</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-002476</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>This has a very clean, and optimized solution. FIPS can cause a lot of problems, and you may find this solution to be very beneficial in turning FIPS on/off for testing.
+
+Fix implemented in Puppet module 'stigs/manifests/redhat7/system_integrity/rhel_07_021350.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -20842,9 +20844,9 @@ If no antivirus scan program is active on the system, this is a finding.</ATTRIB
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001668</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>This STIG cannot be automated. McAfee VSEL is not available for download on the internet. You must configure this STIG in your local environment.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>

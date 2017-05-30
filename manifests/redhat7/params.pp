@@ -38,6 +38,7 @@ class stigs::redhat7::params (
   String $rhel_07_010300 = 'present',
   String $rhel_07_010310 = 'present',
   # rhel_07_010320 and rhel_07_010330 account lockout is too strict
+  # in personal dev environment. enable in production environment
   String $rhel_07_010320 = 'absent',
   String $rhel_07_010330 = 'absent',
   String $rhel_07_010340 = 'present',
@@ -51,8 +52,8 @@ class stigs::redhat7::params (
   # To use these two STIGS, you must create a grub password with
   # the grub2-setpassword command, and save that file as
   # puppet:///modules/stigs/files/redhat7/user.cfg
-  String $rhel_07_010480 = 'present',
-  String $rhel_07_010490 = 'present',
+  String $rhel_07_010480 = 'absent',
+  String $rhel_07_010490 = 'absent',
 
 
   String $rhel_07_020000 = 'present',
@@ -70,8 +71,12 @@ class stigs::redhat7::params (
   String $rhel_07_020220 = 'present',
   String $rhel_07_020230 = 'present',
   String $rhel_07_020240 = 'present',
+
+  String $rhel_07_020310 = 'present',
   String $rhel_07_020320 = 'present',
   String $rhel_07_020330 = 'present',
+
+  String $rhel_07_021350 = 'present',
 
   String $rhel_07_021710 = 'present',
 

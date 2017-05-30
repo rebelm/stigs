@@ -1,24 +1,45 @@
 #!/bin/bash
-# in progress
 
-# Luke i have determined system users, i still need to find out
-if it has a UID of 0. if it is 0 i need to set it to the next available UID
-SYSTEM_USERS=$(awk 'BEGIN {
+# This script will put all users with a UID of 0 in an array. It will
+# Then assign them a new available UID number based on if they are assigned
+# a shell or not
+
+function Get_System_UID {
+	 local  NEW_UID=$(awk -F: '{uid[$3]=1}END{for(x=1; x<=999; x++) {if(uid[x] != ""){}else{print x; exit;}}}' /etc/passwd)
+	 echo "${NEW_UID}"
+}
+
+function Get_User_UID {
+	 local NEW_UID=$(awk -F: '{uid[$3]=1}END{for(x=2000; x<=3000; x++) {if(uid[x] != ""){}else{print x; exit;}}}' /etc/passwd)
+	 echo "${NEW_UID}"
+}
+
+
+PRIVILEGED_USERS=$(awk 'BEGIN {
 	FS = ":"
 }
 {
-	if ( $3 <= 1000 ) { print $1":"$6 }
+	if ( $3 == 0 && $1 != "root" ) { print $1 }
 }' /etc/passwd)
 
 
-for user in ${INTERACTIVE_USERS[@]};do
-	if [[ $(echo $user | cut -d ':' -f 2) == "" ]];then
-		 echo $user | awk 'BEGIN { FS = ":" } $6 = "/home/"$1' 
-	#	echo "user $(echo $user | cut -d ':' -f 1) has no home directory"
+SHELLS=$(cat /etc/shells | grep -v nologin)
+		
+
+for user in ${PRIVILEGED_USERS[@]}; do
+	USER_FLAG=0
+	for shell in ${SHELLS[@]}; do
+		if [ "$(grep "^$user" /etc/passwd | awk -F ':' '{print $7}')" == "$shell" ]; then
+			USER_FLAG=1
+		fi	
+	done
+	if [[ "$USER_FLAG" -eq "1" ]]; then
+		NEXT_UID=$(Get_User_UID)
+	else
+		NEXT_UID=$(Get_System_UID)
 	fi
+
+	sed -i -e "/^$user/ { s|:0:|:$NEXT_UID:|}" /etc/passwd
+
 done
-
-
-# determines next available uid in range i set
-awk -F: '{uid[$3]=1}END{for(x=2000; x<=3000; x++) {if(uid[x] != ""){}else{print x; exit;}}}' /etc/passwd
 
