@@ -49,7 +49,7 @@
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>uuid</SID_NAME>
-                    <SID_DATA>e19e9b3a-85d0-4651-83aa-57cad0d91580</SID_DATA>
+                    <SID_DATA>b3a846ed-a223-44f5-b6ad-7e5ea7335ebd</SID_DATA>
                 </SI_DATA>
                 <SI_DATA>
                     <SID_NAME>notice</SID_NAME>
@@ -9080,9 +9080,9 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This STIG will require me to determine all the known system accounts. I should probably build an array of system accounts, and loop through it to determine if the account is system account or not</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/homedir/rhel_07_020680.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -9198,9 +9198,9 @@ Note: The example will be for the smithj user, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This STIG will require me to determine all the known system accounts. I should probably build an array of system accounts, and loop through it to determine if the account is system account or not</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/homedir/rhel_07_020690.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -9326,9 +9326,9 @@ Note: The example will be for the user smithj, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This STIG will require me to determine all the known system accounts. I should probably build an array of system accounts, and loop through it to determine if the account is system account or not</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/homedir/rhel_07_020700.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -9444,9 +9444,9 @@ Note: The example will be for the smithj user, who has a home directory of "/hom
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This STIG will require me to determine all the known system accounts. I should probably build an array of system accounts, and loop through it to determine if the account is system account or not</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/homedir/rhel_07_020710.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
