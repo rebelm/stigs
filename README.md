@@ -1,5 +1,5 @@
 
-# stigs - INCOMPLETE ( ETC 6/1/17 )
+# stigs - INCOMPLETE ( ETC 6/17 )
 
 #### Table of Contents
 
@@ -14,6 +14,9 @@
 1. [Development - Guide for contributing to the module](#development)
 
 ## Description
+
+*NOTICE* Once complete, I will rewrite the README to only display the usage, and not overwhelm
+
 
 Puppet module for automatically configuring STIGS, while allowing granular control per STIG
 
