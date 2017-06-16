@@ -89,12 +89,19 @@ class stigs::redhat7::params (
   String $rhel_07_020700 = 'present',
   String $rhel_07_020710 = 'present',
 
+  # 021110 also covers 021120
+  String $rhel_07_021110 = 'present',
+  String $rhel_07_021300 = 'present',
+
   String $rhel_07_021350 = 'present',
 
   String $rhel_07_021710 = 'present',
 
   String $rhel_07_030000 = 'present',
 
+  String $rhel_07_030330 = 'present',
+  String $rhel_07_030340 = 'present',
+  String $rhel_07_030350 = 'present',
   String $rhel_07_030370 = 'present',
   String $rhel_07_030380 = 'present',
   String $rhel_07_030390 = 'present',
@@ -156,6 +163,8 @@ class stigs::redhat7::params (
   String $rhel_07_030910 = 'present',
   String $rhel_07_030920 = 'present',
 
+  String $rhel_07_040000 = 'present',
+
   String $rhel_07_040110 = 'present',
   # Enable rhel_07_040160 in production, but the
   # 10 minute timeout is very annoying
@@ -188,6 +197,7 @@ class stigs::redhat7::params (
   String $rhel_07_040460 = 'present',
   String $rhel_07_040470 = 'present',
   String $rhel_07_040500 = 'present',
+  String $rhel_07_040510 = 'present',
   String $rhel_07_040540 = 'present',
   String $rhel_07_040550 = 'present',
 
