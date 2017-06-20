@@ -25115,9 +25115,10 @@ If the "/etc/resolv.conf" file must be mutable, the required configuration must 
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>This is environment dependent, not sure I can automate
+</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25227,9 +25228,9 @@ net.ipv4.conf.all.accept_source_route = 0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040610.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25339,9 +25340,9 @@ net.ipv4.conf.default.accept_source_route = 0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040620.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25451,9 +25452,9 @@ net.ipv4.icmp_echo_ignore_broadcasts=1</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040630.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25563,9 +25564,9 @@ net.ipv4.conf.default.accept_redirects = 0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040640.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25677,9 +25678,9 @@ net.ipv4.conf.default.send_redirects=0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040650.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25792,9 +25793,9 @@ net.ipv4.conf.all.send_redirects=0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040660.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -25907,9 +25908,9 @@ Set the promiscuous mode of an interface to off with the following command:
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Look for a better way to automate this</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -26026,9 +26027,9 @@ If the "smtpd_client_restrictions" parameter contains any entries other than "pe
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Don't want to do this one currently</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -26501,9 +26502,9 @@ server_args = -s /var/lib/tftpboot</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Easy to automate, come back later</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -26616,9 +26617,9 @@ If the use of X Windows on the system is not documented with the Information Sys
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Easy to automate, come back later</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -26728,9 +26729,9 @@ net.ipv4.ip_forward = 0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040740.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -26840,9 +26841,9 @@ Ensure the "sec" option is defined as "krb5:krb5i:krb5p".</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>This will be difficult to automate.. not sure I can</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -27226,9 +27227,9 @@ If there are indications that a "conn" parameter is configured for a tunnel, ask
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>This will take some time. save for last</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -27340,9 +27341,9 @@ net.ipv6.conf.all.accept_source_route = 0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040830.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -27480,9 +27481,9 @@ Install the "esc", "pam_pkcs11", "authconfig", and "authconfig-gtk" packages on 
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001954</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>easy to automate. come back later.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -29127,9 +29128,9 @@ net.ipv4.conf.all.accept_redirects = 0</ATTRIBUTE_DATA>
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Not_Reviewed</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS></COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/kernel_parameter/rhel_07_040641.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>

@@ -198,6 +198,18 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::authentication::ssh::rhel_07_040540
   include stigs::redhat7::authentication::ssh::rhel_07_040550
 
+  include stigs::redhat7::kernel_parameter::rhel_07_040610
+  include stigs::redhat7::kernel_parameter::rhel_07_040620
+  include stigs::redhat7::kernel_parameter::rhel_07_040630
+  include stigs::redhat7::kernel_parameter::rhel_07_040640
+  include stigs::redhat7::kernel_parameter::rhel_07_040641
+  include stigs::redhat7::kernel_parameter::rhel_07_040650
+  include stigs::redhat7::kernel_parameter::rhel_07_040660
+
+  include stigs::redhat7::kernel_parameter::rhel_07_040740
+
+  include stigs::redhat7::kernel_parameter::rhel_07_040830
+
   include stigs::redhat7::software::rhel_07_040690
   include stigs::redhat7::software::rhel_07_040700
   include stigs::redhat7::authentication::ssh::rhel_07_040710

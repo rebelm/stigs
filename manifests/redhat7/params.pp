@@ -93,7 +93,9 @@ class stigs::redhat7::params (
   String $rhel_07_021110 = 'present',
   String $rhel_07_021300 = 'present',
 
-  String $rhel_07_021350 = 'present',
+  # Enable in production - blocks 
+  # pip version 9
+  String $rhel_07_021350 = 'absent',
 
   String $rhel_07_021710 = 'present',
 
@@ -194,6 +196,15 @@ class stigs::redhat7::params (
   String $rhel_07_040430 = 'present',
   String $rhel_07_040440 = 'present',
   String $rhel_07_040450 = 'present',
+
+  String $rhel_07_040610 = 'present',
+  String $rhel_07_040620 = 'present',
+  String $rhel_07_040630 = 'present',
+  String $rhel_07_040640 = 'present',
+  String $rhel_07_040641 = 'present',
+  String $rhel_07_040650 = 'present',
+  String $rhel_07_040660 = 'present',
+
   String $rhel_07_040460 = 'present',
   String $rhel_07_040470 = 'present',
   String $rhel_07_040500 = 'present',
@@ -205,8 +216,11 @@ class stigs::redhat7::params (
   String $rhel_07_040700 = 'present',
   String $rhel_07_040710 = 'present',
 
+  String $rhel_07_040740 = 'present',
+
   String $rhel_07_040800 = 'present',
 
+  String $rhel_07_040830 = 'present',
 ){
 
 }
