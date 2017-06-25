@@ -123,6 +123,11 @@ class stigs::redhat7::params (
   # pip version 9
   String $rhel_07_021350 = 'absent',
 
+  # Setting automated_aide to 'present' will apply STIGS
+  # RHEL-07-021600
+  # RHEL-07-021610
+  # RHEL-07-021620
+  String $aide_configuration = 'present',
   String $rhel_07_021710 = 'present',
 
   String $rhel_07_030000 = 'present',

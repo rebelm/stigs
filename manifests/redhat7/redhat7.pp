@@ -100,7 +100,7 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
 
   include stigs::redhat7::system_integrity::rhel_07_021110
   include stigs::redhat7::services::rhel_07_021300
-
+  include stigs::redhat7::file_integrity::aide_configuration
   include stigs::redhat7::software::rhel_07_021710
 
   include stigs::redhat7::services::rhel_07_030000
