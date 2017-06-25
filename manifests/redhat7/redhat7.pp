@@ -169,6 +169,7 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::audit::rhel_07_030900
   include stigs::redhat7::audit::rhel_07_030910
   include stigs::redhat7::audit::rhel_07_030920
+  include stigs::redhat7::logging::rhel_07_031000
 
   include stigs::redhat7::system_integrity::rhel_07_040000
 

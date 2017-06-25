@@ -9,7 +9,13 @@ class stigs::redhat7::params (
 # default. If you have confirmed the values are correct, change the 
 # corresponding STIG variable from 'absent' to 'present'
 # ------------------------------------------------------------------------
+  # Once set, change $automated_aide variable to 'present'
   String $aide_email = 'root',
+
+  # Once set, change $rhel_07_031000 variable to 'present'
+  String $log_aggregation_server = 'log_server',
+  String $log_server_port = '514',
+  
 
 
 
@@ -195,6 +201,7 @@ class stigs::redhat7::params (
   String $rhel_07_030900 = 'present',
   String $rhel_07_030910 = 'present',
   String $rhel_07_030920 = 'present',
+  String $rhel_07_031000 = 'absent',
 
   String $rhel_07_040000 = 'present',
 
