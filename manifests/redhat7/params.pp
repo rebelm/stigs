@@ -1,9 +1,29 @@
+class stigs::redhat7::params (
+# ------------------------------------------------------------------------
+# ------------------------------------------------------------------------
+#                           SITE VARIABLES
+# ------------------------------------------------------------------------
+# The following variables are site specific, and you need to set them
+# for certain automated STIG checks to work properly. STIGS that require
+# one of these site variables to be set will have a value of 'absent' by
+# default. If you have confirmed the values are correct, change the 
+# corresponding STIG variable from 'absent' to 'present'
+# ------------------------------------------------------------------------
+  String $aide_email = 'root',
+
+
+
+
+# ------------------------------------------------------------------------
+# ------------------------------------------------------------------------
+#                           STIG VARIABLES                            
+# ------------------------------------------------------------------------
 # Available options are either 'present' or 'absent'
 # 'present' means you will enforce the STIG on the system
 # 'absent' means the STIG will not be enforced
-#  Warning: setting a STIG value to 'absent' doesn't neccessarily mean
-#  the opposite of applying the STIG, just that the STIG isn't being enforced
-class stigs::redhat7::params (
+#  NOTICE: setting a STIG value to 'absent' doesn't neccessarily mean
+#  the opposite of applying the STIG, just that the STIG won't be enforced 
+# ------------------------------------------------------------------------
   String $rhel_07_010010 = 'present',
   String $rhel_07_010020 = 'present',
   String $rhel_07_010030 = 'present',
@@ -58,6 +78,12 @@ class stigs::redhat7::params (
 
   String $rhel_07_020000 = 'present',
   String $rhel_07_020010 = 'present',
+
+  # Setting $automated_aide to 'present' will apply STIGS
+  # RHEL-07-020030
+  # RHEL-07-020040
+  String $automated_aide = 'present',
+
   String $rhel_07_020050 = 'present',
   String $rhel_07_020060 = 'present',
   # rhel_07_020070 stopped me from installing software completely
@@ -221,6 +247,7 @@ class stigs::redhat7::params (
   String $rhel_07_040800 = 'present',
 
   String $rhel_07_040830 = 'present',
+
 ){
 
 }
