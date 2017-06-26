@@ -170,6 +170,7 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::audit::rhel_07_030910
   include stigs::redhat7::audit::rhel_07_030920
   include stigs::redhat7::logging::rhel_07_031000
+  include stigs::redhat7::logging::rhel_07_031010
 
   include stigs::redhat7::system_integrity::rhel_07_040000
 
@@ -197,8 +198,9 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::authentication::ssh::rhel_07_040460
   include stigs::redhat7::authentication::ssh::rhel_07_040470
   include stigs::redhat7::services::rhel_07_040500
-
   include stigs::redhat7::system_integrity::rhel_07_040510
+  include stigs::redhat7::services::rhel_07_040520
+
   include stigs::redhat7::authentication::ssh::rhel_07_040540
   include stigs::redhat7::authentication::ssh::rhel_07_040550
 
@@ -220,4 +222,6 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
 
 
   include stigs::redhat7::authentication::snmp::rhel_07_040800
+
+  include stigs::redhat7::software::rhel_07_041001
 }

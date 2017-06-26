@@ -1,0 +1,6 @@
+The following configurations on the system have not been automated, due to having too many 
+unknown variables about the remote environment:
+
+1. DOD approved virus scan
+2. Firewall Configurations
+3. LDAP authentication 

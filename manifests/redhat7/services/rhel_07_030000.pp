@@ -8,18 +8,12 @@ class stigs::redhat7::services::rhel_07_030000 inherits stigs::redhat7::redhat7 
 
   # If this STIG is enforced, we want the service started, and enabled
   if $rhel_07_030000 == 'present' {
-    $enable = 'true'
-    $ensure = 'running'
-  }
-  else {
-    $enable = 'false'
-    $ensure = 'stopped'
-  }
+    
+    service { 'auditd':
+      ensure => 'running',
+      enable => 'true',
+    }
 
-  service { 'auditd':
-    ensure => $ensure,
-    enable => $enable,
   }
-
 
 }

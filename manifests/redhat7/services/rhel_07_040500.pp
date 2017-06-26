@@ -13,39 +13,31 @@ class stigs::redhat7::services::rhel_07_040500 inherits stigs::redhat7::redhat7 
     $service = 'running'
     $package = 'present'
     $file = 'file'
-  }
-  else {
-    $enable = 'false'
-    $ensure = 'absent'
-    $service = 'stopped'
-    $package = 'present'
-    $file = 'absent'
-  }
 
+    package { 'ntp':
+      ensure => $package,
+    }
+    ->
+    file { '/etc/ntp.conf':
+      ensure => $file,
+      owner  => 'root',
+      group  => 'root',
+      mode   => '0644',
+    }
+    ->
+    file_line { 'ntp-maxpoll':
+      ensure  => $ensure,
+      line    => 'maxpoll 10',
+      path    => '/etc/ntp.conf',
+      match   => '^maxpoll',
+      replace => 'true',
+    }
+    service { 'ntpd':
+      ensure    => $service,
+      enable    => $enable,
+      subscribe => File['/etc/ntp.conf'],
+    }
 
-  package { 'ntp':
-    ensure => $package,
   }
-  ->
-  file { '/etc/ntp.conf':
-    ensure => $file,
-    owner  => 'root',
-    group  => 'root',
-    mode   => '0644',
-  }
-  ->
-  file_line { 'ntp-maxpoll':
-    ensure  => $ensure,
-    line    => 'maxpoll 10',
-    path    => '/etc/ntp.conf',
-    match   => '^maxpoll',
-    replace => 'true',
-  }
-  service { 'ntpd':
-    ensure    => $service,
-    enable    => $enable,
-    subscribe => File['/etc/ntp.conf'],
-  }
-
 
 }

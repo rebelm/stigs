@@ -9,27 +9,52 @@ class stigs::redhat7::params (
 # default. If you have confirmed the values are correct, change the 
 # corresponding STIG variable from 'absent' to 'present'
 # ------------------------------------------------------------------------
-  # Once set, change $automated_aide variable to 'present'
+  # Once set, change following variables to 'present'
+  # $automated_aide 
   String $aide_email = 'root',
 
-  # Once set, change $rhel_07_031000 variable to 'present'
-  String $log_aggregation_server = 'log_server',
+  # Once set, change following variables to 'present':
+  # rhel_07-031000
+  # rhel_07-031010
+
+  # Ensure server name is FQDN 
+  String $log_aggregation_server = 'log_server.example.com',
   String $log_server_port = '514',
   
 
 
 
 
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 #                           STIG VARIABLES                            
-# ------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Available options are either 'present' or 'absent'
 # 'present' means you will enforce the STIG on the system
 # 'absent' means the STIG will not be enforced
+#
 #  NOTICE: setting a STIG value to 'absent' doesn't neccessarily mean
 #  the opposite of applying the STIG, just that the STIG won't be enforced 
-# ------------------------------------------------------------------------
+#
+#  The goal is to be as least intrusive as possible to your environment
+#
+# EXAMPLE: STIG RHEL-07-040520 requires that firewalld be installed and 
+#          the service running.
+#          Setting the variable to 'present' enforces this rule. However 
+#          setting the variable to 'absent' won't stop the service and 
+#          uninstall the program It will just stop the STIG from being enforced
+#          
+#          However, STIG RHEL-07-010440 requires that the line 
+#          AutomaticLoginEnable=false be set in the /etc/gdm/custom.conf file. 
+#          When the variable is set to 'present' that line will ensure the 
+#          line exists. When the variable is set to 'absent' that line needs
+#          to be removed, or else the STIG will still be enforced
+#   
+#          When in doubt, the functionality of setting a STIG to 'absent' 
+#          is supposed to guarentee the STIG is no longer enforced, and at the
+#          same time not screw up your machine, and cause any unexpected
+#          behavior.
+# ------------------------------------------------------------------------------
   String $rhel_07_010010 = 'present',
   String $rhel_07_010020 = 'present',
   String $rhel_07_010030 = 'present',
@@ -202,6 +227,7 @@ class stigs::redhat7::params (
   String $rhel_07_030910 = 'present',
   String $rhel_07_030920 = 'present',
   String $rhel_07_031000 = 'absent',
+  String $rhel_07_031010 = 'absent',
 
   String $rhel_07_040000 = 'present',
 
@@ -247,6 +273,7 @@ class stigs::redhat7::params (
   String $rhel_07_040470 = 'present',
   String $rhel_07_040500 = 'present',
   String $rhel_07_040510 = 'present',
+  String $rhel_07_040520 = 'present',
   String $rhel_07_040540 = 'present',
   String $rhel_07_040550 = 'present',
 
@@ -259,6 +286,7 @@ class stigs::redhat7::params (
   String $rhel_07_040800 = 'present',
 
   String $rhel_07_040830 = 'present',
+  String $rhel_07_041001 = 'present',
 
 ){
 

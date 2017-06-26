@@ -20726,9 +20726,9 @@ If the documentation does not exist, or does not specify the server as a log agg
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001814</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This STIG can maybe be automated, but it depends on determining if the host is a log aggregation server, which I can't reliably do. I can create a variable for a log aggregation server and create an if condtion to see if the host is that host.</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/logging/rhel_07_031010.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -21237,7 +21237,7 @@ If there are additional ports, protocols, or services that are not in the PPSM C
                 </STIG_DATA>
                 <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>This requries me to enable ports based on each servers purpose which I can't know. Can't be automated</COMMENTS>
+                <COMMENTS>This requries me to enable ports based on each servers purpose which would be impossible to determine. Unable to be automated</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -21809,7 +21809,9 @@ Set "ssl start_tls" in "/etc/pam_ldap.conf".</ATTRIBUTE_DATA>
                 </STIG_DATA>
                 <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>Unsure on what I want to do with this one yet.</COMMENTS>
+                <COMMENTS>Not only is LDAP authentication site specific, but these STIGS don't seem to account for configurations using SSSD, which is very likely.
+
+Most likely not possible to be automated.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -21934,7 +21936,9 @@ Set the "tls_cacertfile" option in "/etc/pam_ldap.conf" to point to the path for
                 </STIG_DATA>
                 <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>Unsure on what I want to do with this one yet.</COMMENTS>
+                <COMMENTS>Not only is LDAP authentication site specific, but these STIGS don't seem to account for configurations using SSSD, which is very likely.
+
+Most likely not possible to be automated.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -22057,7 +22061,9 @@ Set the "tls_cacertfile" option in "/etc/pam_ldap.conf" to point to the path for
                 </STIG_DATA>
                 <STATUS>Open</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>Unsure on what I want to do with this one yet.</COMMENTS>
+                <COMMENTS>Not only is LDAP authentication site specific, but these STIGS don't seem to account for configurations using SSSD, which is very likely.
+
+Most likely not possible to be automated.</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -24649,9 +24655,9 @@ Start the firewall via "systemctl" with the following command:
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>Should be easy to fix but I'm tired</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/services/rhel_07_040520.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
@@ -27487,9 +27493,9 @@ Install the "esc", "pam_pkcs11", "authconfig", and "authconfig-gtk" packages on 
                     <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
                     <ATTRIBUTE_DATA>CCI-001954</ATTRIBUTE_DATA>
                 </STIG_DATA>
-                <STATUS>Open</STATUS>
+                <STATUS>NotAFinding</STATUS>
                 <FINDING_DETAILS></FINDING_DETAILS>
-                <COMMENTS>easy to automate. come back later.</COMMENTS>
+                <COMMENTS>Fix implemented in Puppet module 'stigs/manifests/redhat7/software/rhel_07_041001.pp'</COMMENTS>
                 <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
                 <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
             </VULN>
