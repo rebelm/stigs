@@ -21,6 +21,8 @@ class stigs::redhat7::redhat7 inherits stigs::redhat7::params {
   include stigs::redhat7::gnome::rhel_07_010060
   include stigs::redhat7::gnome::rhel_07_010070
   include stigs::redhat7::gnome::rhel_07_010080
+  include stigs::redhat7::gnome::rhel_07_010081
+  include stigs::redhat7::gnome::rhel_07_010082
   include stigs::redhat7::software::rhel_07_010090
   include stigs::redhat7::gnome::rhel_07_010100
   include stigs::redhat7::gnome::rhel_07_010110
